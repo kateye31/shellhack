@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GridLock Logo Options</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root { --sc: #2f8cff; --ga: #ff7a1a; --volt: #ffd23f; --ink: #0b1020; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #eef1f6; font: 14px/1.5 Inter, sans-serif; color: #1a2233; padding: 32px 20px 60px; }
+  h1 { font: 700 28px "Space Grotesk", sans-serif; margin: 0 0 4px; letter-spacing: -.02em; }
+  .lede { color: #5a6477; margin: 0 0 28px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 18px; max-width: 1400px; }
+  .card { background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 1px 2px rgb(0 0 0 / .05), 0 8px 24px rgb(20 30 60 / .07); }
+  .stage { display: grid; grid-template-columns: 1fr 1fr; }
+  .stage > div { display: flex; align-items: center; justify-content: center; gap: 12px; padding: 30px 14px; }
+  .light { background: #fff; }
+  .dark { background: radial-gradient(120% 120% at 20% 0%, #1a2340 0%, #0b1020 60%); }
+  .word { font: 700 24px "Space Grotesk", sans-serif; letter-spacing: -.03em; color: var(--ink); }
+  .dark .word { color: #fff; }
+  .word b { font-weight: 700; background: linear-gradient(90deg, var(--sc), var(--ga)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .mark { width: 54px; height: 54px; flex: none; }
+  .meta { padding: 14px 18px 18px; border-top: 1px solid #eef0f4; display: grid; gap: 6px; }
+  .meta h2 { font: 600 16px "Space Grotesk", sans-serif; margin: 0; display: flex; align-items: center; gap: 8px; }
+  .meta h2 span { font: 500 11px Inter; background: #eef1f6; padding: 2px 8px; border-radius: 20px; color: #5a6477; }
+  .meta h2 span.rec { background: #1a2233; color: #fff; }
+  .meta p { margin: 0; color: #5a6477; font-size: 13px; }
+  .sizes { display: flex; align-items: center; gap: 12px; }
+  .sizes svg { flex: none; }
+  .fav { width: 16px; height: 16px; } .s32 { width: 32px; height: 32px; }
+  .app { width: 40px; height: 40px; border-radius: 10px; background: #0b1020; display: grid; place-items: center; }
+  .app svg { width: 28px; height: 28px; }
+</style>
+</head>
+<body>
+<h1>GridLock logo options</h1>
+<p class="lede">Every mark uses DESC blue, Georgia Power orange and a voltage-yellow accent. Each card shows the mark on light and dark backgrounds, plus favicon and app-icon sizes.</p>
+
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <linearGradient id="gSC" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5aa8ff"/><stop offset="1" stop-color="#1f6fe0"/></linearGradient>
+    <linearGradient id="gGA" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffa04d"/><stop offset="1" stop-color="#ec5a00"/></linearGradient>
+    <linearGradient id="gMix" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2f8cff"/><stop offset="1" stop-color="#ff7a1a"/></linearGradient>
+    <linearGradient id="gVolt" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff1a8"/><stop offset="1" stop-color="#ffc400"/></linearGradient>
+
+    <!-- 1. Interlock: two service territories overlap, bolt in the lens -->
+    <symbol id="m1" viewBox="0 0 64 64">
+      <circle cx="23" cy="32" r="17" fill="none" stroke="url(#gSC)" stroke-width="5.5"/>
+      <circle cx="41" cy="32" r="17" fill="none" stroke="url(#gGA)" stroke-width="5.5"/>
+      <path d="M32 17.6A17 17 0 0 1 32 46.4A17 17 0 0 1 32 17.6Z" fill="url(#gVolt)"/>
+      <path d="M34.6 21.5 27.4 33.4h4.4l-2.4 9.1 7.2-11.9h-4.4z" fill="#0b1020" stroke-linejoin="round"/>
+    </symbol>
+
+    <!-- 2. Tower handshake: two lattice towers share one line -->
+    <symbol id="m2" viewBox="0 0 64 64">
+      <g fill="none" stroke-linejoin="round" stroke-linecap="round">
+        <path d="M8 56 16 16 24 56M11 40h10M13 28h6M8 20h16" stroke="url(#gSC)" stroke-width="3.5"/>
+        <path d="M40 56 48 16 56 56M43 40h10M45 28h6M40 20h16" stroke="url(#gGA)" stroke-width="3.5"/>
+        <path d="M8 20Q32 34 56 20" stroke="url(#gMix)" stroke-width="2.5"/>
+      </g>
+      <circle cx="32" cy="27" r="5.5" fill="url(#gVolt)" stroke="#b37f00" stroke-width=".8"/>
+    </symbol>
+
+    <!-- 3. Padlock grid: shackle is a power line arc, body is a grid map -->
+    <symbol id="m3" viewBox="0 0 64 64">
+      <path d="M19 28V21a13 13 0 0 1 26 0v7" fill="none" stroke="url(#gMix)" stroke-width="6" stroke-linecap="round"/>
+      <rect x="10" y="27" width="44" height="31" rx="8" fill="#0b1020" stroke="#3a4a78" stroke-width="1.5"/>
+      <g stroke="#2a3558" stroke-width="1.2"><path d="M10 37h44M10 47h44M24 27v31M40 27v31"/></g>
+      <path d="M10 43c8-6 14 4 22-2s14-6 22 0" fill="none" stroke="#5ea9ff" stroke-width="2"/>
+      <circle cx="24" cy="37" r="3.2" fill="#2f8cff"/><circle cx="40" cy="47" r="3.2" fill="#ff7a1a"/>
+      <path d="M24 37 40 47" stroke="url(#gVolt)" stroke-width="2" stroke-dasharray="2 2.5"/>
+    </symbol>
+
+    <!-- 4. River crossing: two nodes either side of the Savannah River -->
+    <symbol id="m4" viewBox="0 0 64 64">
+      <rect x="2" y="2" width="60" height="60" rx="16" fill="#0b1020"/>
+      <path d="M36 4c-8 10 6 16-2 28s4 18-4 28" fill="none" stroke="#1d3a66" stroke-width="7" stroke-linecap="round"/>
+      <path d="M36 4c-8 10 6 16-2 28s4 18-4 28" fill="none" stroke="#3b7bd6" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+      <path d="M17 40Q32 12 48 26" fill="none" stroke="url(#gVolt)" stroke-width="2.5" stroke-dasharray="3 3"/>
+      <circle cx="17" cy="40" r="6" fill="url(#gGA)"/><circle cx="48" cy="26" r="6" fill="url(#gSC)"/>
+    </symbol>
+
+    <!-- 5. GL monogram bolt: G and L lock together around a bolt -->
+    <symbol id="m5" viewBox="0 0 64 64">
+      <path d="M44 16A20 20 0 1 0 50 36H34" fill="none" stroke="url(#gSC)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M40 30v18h14" fill="none" stroke="url(#gGA)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M31 14h-6l-5 13h6l-3 11 10-15h-6z" fill="url(#gVolt)" stroke="#b37f00" stroke-width=".6" stroke-linejoin="round"/>
+    </symbol>
+
+    <!-- 6. Radar ping: overlap zone as concentric tier rings (40 / 8 / 1.6 km) -->
+    <symbol id="m6" viewBox="0 0 64 64">
+      <circle cx="32" cy="32" r="28" fill="none" stroke="url(#gMix)" stroke-width="2" opacity=".35"/>
+      <circle cx="32" cy="32" r="19" fill="none" stroke="url(#gMix)" stroke-width="2.5" opacity=".65"/>
+      <circle cx="32" cy="32" r="10" fill="none" stroke="url(#gMix)" stroke-width="3"/>
+      <path d="M6 44 26 30M58 20 38 34" stroke-width="4" stroke-linecap="round" fill="none"/>
+      <path d="M6 44 26 30" stroke="url(#gSC)" stroke-width="4" stroke-linecap="round"/>
+      <path d="M58 20 38 34" stroke="url(#gGA)" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="32" cy="32" r="4.5" fill="url(#gVolt)"/>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="grid" id="grid"></div>
+
+<script>
+const opts = [
+  ["m1", "Interlock", "Two service territories, with the overlap zone lit up in voltage yellow. It says what the tool does at a glance and still reads at 16 px.", "Recommended"],
+  ["m2", "Tower Handshake", "Two lattice towers, one per utility, sharing a single line. Very literal and very 'utility industry'.", ""],
+  ["m3", "Grid Padlock", "A lock whose body is a tiny map, with two sites joined by a live link. Plays on the name GridLock.", ""],
+  ["m4", "River Crossing", "The Savannah River with one node on each bank, bridged by a spark. Tells the SC–GA story best.", ""],
+  ["m5", "GL Monogram", "G (blue) and L (orange) lock together around a bolt. Compact and works well as a favicon.", ""],
+  ["m6", "Overlap Radar", "Concentric rings for the 40 / 8 / 1.6 km tiers, with two lines converging on a hot spot.", ""],
+];
+const use = (id, cls = "mark") => `<svg class="${cls}" viewBox="0 0 64 64"><use href="#${id}"/></svg>`;
+document.getElementById("grid").innerHTML = opts.map(([id, name, desc, tag], i) => `
+  <div class="card">
+    <div class="stage">
+      <div class="light">${use(id)}<span class="word">Grid<b>Lock</b></span></div>
+      <div class="dark">${use(id)}<span class="word">Grid<b>Lock</b></span></div>
+    </div>
+    <div class="meta">
+      <h2>${i + 1}. ${name}${tag ? `<span class="rec">${tag}</span>` : ""}</h2>
+      <p>${desc}</p>
+      <div class="sizes">${use(id, "fav")}${use(id, "s32")}<div class="app">${use(id, "")}</div></div>
+    </div>
+  </div>`).join("");
+</script>
+</body>
+</html>

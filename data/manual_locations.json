@@ -1,0 +1,285 @@
+{
+ "_readme": "Hand-verified endpoint coordinates. Keys are 'UTILITY:NORMALIZED NAME' (or 'STATE:NAME' / 'NAME'). 'endpoints' overrides how a project name is split into facilities. confidence: high = named substation matched in OSM/starter data; medium = named facility or road of that name in the right area; low = estimated from the project description.",
+ "DESC:STEVENS CREEK": {
+  "lat": 33.562599,
+  "lon": -82.051362,
+  "source": "Sperry starter workbook; OSM 'Stevens Creek Dam Substation'"
+ },
+ "DESC:THURMOND": {
+  "lat": 33.660127,
+  "lon": -82.195931,
+  "source": "Sperry starter workbook; OSM 'Thurmond Substation'"
+ },
+ "DESC:HOOKS": {
+  "lat": 33.6589,
+  "lon": -82.1621,
+  "confidence": "low",
+  "source": "Estimated: not in public map data. PDF says the Hooks-Thurmond rebuild section is ~2.3 mi; placed at Clarks Hill, SC (2 mi from Thurmond)"
+ },
+ "DESC:JASPER": {
+  "lat": 32.35912,
+  "lon": -81.1246,
+  "source": "Sperry starter workbook; OSM 'Jasper Substation'"
+ },
+ "DESC:OKATIE": {
+  "lat": 32.333758,
+  "lon": -81.032495,
+  "source": "Sperry starter workbook"
+ },
+ "DESC:BLUFFTON": {
+  "lat": 32.235027,
+  "lon": -80.853384,
+  "source": "Sperry starter workbook; OSM 'Bluffton Substation' (SCE&G)"
+ },
+ "DESC:QUEENSBORO": {
+  "lat": 32.722793,
+  "lon": -79.967332,
+  "source": "Sperry starter workbook; OSM 'Queensborough Substation'"
+ },
+ "DESC:RIVERPORT": {
+  "lat": 32.2113,
+  "lon": -81.0758,
+  "confidence": "medium",
+  "source": "Riverport industrial park, Riverport Pkwy, Hardeeville SC (Nominatim); PDF: 'Okatie - Riverport 230 kV to feed new distribution substation'"
+ },
+ "DESC:WATEREE": {
+  "lat": 33.8263,
+  "lon": -80.6241,
+  "source": "OSM 'Wateree Substation' at DESC Wateree Station"
+ },
+ "DESC:KILLIAN": {
+  "lat": 34.1379,
+  "lon": -80.9603,
+  "confidence": "low",
+  "source": "Killian Rd, Columbia SC (Nominatim)"
+ },
+ "DESC:VCS1": {
+  "lat": 34.296,
+  "lon": -81.3149,
+  "source": "OSM 'Virgil C. Summer Nuclear #1 Substation'"
+ },
+ "DESC:VCS2": {
+  "lat": 34.2904,
+  "lon": -81.3286,
+  "source": "OSM 'Virgil C. Summer Nuclear #2/3 Switching Station'"
+ },
+ "DESC:SCOUT": {
+  "lat": 34.296,
+  "lon": -81.3149,
+  "confidence": "low",
+  "source": "New customer sub; PDF: line modifies VCS1 and Killian terminals. Anchored at VCS1"
+ },
+ "DESC:ST GEORGE": {
+  "lat": 33.1994,
+  "lon": -80.592,
+  "source": "OSM 'Saint George Switching Station'"
+ },
+ "DESC:FROGMORE": {
+  "lat": 32.3991,
+  "lon": -80.5711,
+  "source": "OSM 'Frogmore Substation' (SCE&G)"
+ },
+ "DESC:SUMMERVILLE": {
+  "lat": 33.0187,
+  "lon": -80.1763,
+  "confidence": "low",
+  "source": "Summerville, SC town centre (Nominatim)"
+ },
+ "DESC:EASTOVER": {
+  "lat": 33.8771,
+  "lon": -80.6923,
+  "confidence": "low",
+  "source": "Eastover, SC (Nominatim)"
+ },
+ "DESC:SANTEE CITY": {
+  "lat": 33.4752,
+  "lon": -80.4865,
+  "confidence": "low",
+  "source": "Santee, SC (Nominatim)"
+ },
+ "DESC:SALUDA COUNTY": {
+  "lat": 33.9973,
+  "lon": -81.7662,
+  "confidence": "medium",
+  "source": "OSM 'Saluda Substation', Saluda SC"
+ },
+ "DESC:COIT": {
+  "lat": 33.9802,
+  "lon": -81.0406,
+  "confidence": "medium",
+  "source": "Coit Gas Turbine Plant, Columbia SC (Nominatim)"
+ },
+ "DESC:URQUHART": {
+  "lat": 33.4329,
+  "lon": -81.9111,
+  "source": "OSM 'Urquhart Substation' at DESC Urquhart Station"
+ },
+ "DESC:TOOLEBECK": {
+  "lat": 33.5346,
+  "lon": -81.6693,
+  "source": "OSM 'Toolebeck Substation'"
+ },
+ "DESC:DAWSON": {
+  "lat": 32.96,
+  "lon": -80.36,
+  "confidence": "low",
+  "source": "New sub; PDF: folds in Canadys-Church Creek / Canadys-Faber Place 230kV. Placed on that corridor west of Summerville"
+ },
+ "GPC:EVANS PRIMARY": {
+  "lat": 33.543994,
+  "lon": -82.168648,
+  "source": "Sperry starter workbook; OSM 'Evans Primary Substation'"
+ },
+ "GPC:THURMOND DAM": {
+  "lat": 33.660127,
+  "lon": -82.195931,
+  "source": "Sperry starter workbook"
+ },
+ "GPC:MCINTOSH": {
+  "lat": 32.352116,
+  "lon": -81.175112,
+  "source": "Sperry starter workbook; OSM 'McIntosh Substation'"
+ },
+ "GPC:GOSHEN": {
+  "lat": 32.248701,
+  "lon": -81.209472,
+  "source": "Sperry starter workbook; OSM 'Goshen Substation' (Savannah area, the '(SAV)' Goshen)"
+ },
+ "GPC:GOSHEN AUGUSTA": {
+  "lat": 33.3198,
+  "lon": -81.9953,
+  "source": "OSM 'Goshen Substation' south Augusta; PDF: 'Goshen - Vogtle corridor'"
+ },
+ "GPC:PURRYSBURG": {
+  "lat": 32.237,
+  "lon": -81.0972,
+  "confidence": "medium",
+  "source": "DESC tie substation; Purrysburg Rd, Hardeeville SC (Nominatim)"
+ },
+ "GPC:RICE HOPE": {
+  "lat": 32.2293,
+  "lon": -81.1871,
+  "confidence": "medium",
+  "source": "Rice Hope, Port Wentworth GA (Nominatim); PDF: loops in Crossgate - McIntosh 230kV"
+ },
+ "GPC:HYUNDAI MOTORS": {
+  "lat": 32.1666,
+  "lon": -81.4609,
+  "source": "OSM 'Hyundai Motors Substation'"
+ },
+ "GPC:BIG OGEECHEE": {
+  "lat": 32.04,
+  "lon": -81.29,
+  "confidence": "low",
+  "source": "New sub; PDF: 'near Little Ogeechee' on the Little Ogeechee - Meldrim 230kV ROW"
+ },
+ "GPC:NEWTON ROAD": {
+  "lat": 32.1127,
+  "lon": -81.3732,
+  "source": "OSM 'Newton Road Substation'"
+ },
+ "GPC:FENWICK STREET": {
+  "lat": 33.4782,
+  "lon": -81.9957,
+  "confidence": "medium",
+  "source": "Fenwick St, Augusta GA (Nominatim)"
+ },
+ "GPC:EAST AUGUSTA JCT": {
+  "lat": 33.4487,
+  "lon": -81.9224,
+  "confidence": "low",
+  "source": "PDF endpoint; placed at Sand Bar Ferry Rd, Augusta"
+ },
+ "GPC:MITCHELL": {
+  "lat": 31.447121,
+  "lon": -84.133843,
+  "source": "Sperry starter workbook"
+ },
+ "GPC:NORTH TIFTON": {
+  "lat": 31.478089,
+  "lon": -83.54913,
+  "source": "Sperry starter workbook"
+ },
+ "GPC:JESUP": {
+  "lat": 31.603106,
+  "lon": -81.924947,
+  "source": "Sperry starter workbook"
+ },
+ "GPC:LUDOWICI PRIMARY": {
+  "lat": 31.721597,
+  "lon": -81.743703,
+  "source": "Sperry starter workbook"
+ },
+ "endpoints": {
+  "DESC-03": [
+   "Okatie",
+   "Jasper"
+  ],
+  "DESC-06": [
+   "Burton",
+   "Frogmore"
+  ],
+  "DESC-07": [
+   "Frogmore",
+   "St Helena"
+  ],
+  "DESC-08": [
+   "VCS1",
+   "Denny Terrace"
+  ],
+  "DESC-22": [
+   "Okatie",
+   "Riverport"
+  ],
+  "DESC-33": [
+   "Scout",
+   "Killian"
+  ],
+  "DESC-34": [
+   "Dawson",
+   "Canadys"
+  ],
+  "GA-19523": [
+   "Hyundai Motors",
+   "Meldrim"
+  ],
+  "GA-19966": [
+   "Big Ogeechee",
+   "Little Ogeechee"
+  ],
+  "GA-20989": [
+   "Rice Hope"
+  ],
+  "GA-20796": [
+   "Meldrim"
+  ],
+  "GA-21116": [
+   "Goshen Augusta"
+  ],
+  "GA-16007": [
+   "Fenwick Street",
+   "East Augusta Jct"
+  ],
+  "GA-20152": [
+   "Cass Pine"
+  ],
+  "GA-20175": [
+   "Chronos"
+  ],
+  "DESC-05": [
+   "Eastover"
+  ],
+  "DESC-13": [
+   "Hopkins"
+  ],
+  "DESC-11": [
+   "Hopkins"
+  ]
+ },
+ "DESC:HOPKINS": {
+  "lat": 33.9043,
+  "lon": -80.877,
+  "confidence": "low",
+  "source": "Hopkins, SC (Nominatim). 'Square D' and 'CIP' endpoints are industrial customers not in public map data"
+ }
+}

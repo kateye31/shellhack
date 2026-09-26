@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GridLock — Cross-Utility Overlap Finder</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <svg viewBox="0 0 24 24" class="logo" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>
+    <div>
+      <h1>GridLock</h1>
+      <p>Where Dominion Energy SC and Georgia Power plan work near each other, and when</p>
+    </div>
+  </div>
+  <div class="stats" id="stats"></div>
+  <div class="top-actions">
+    <button class="ghost" id="btn-method">Methodology</button>
+    <button class="ghost" id="btn-export">Export CSV</button>
+    <button class="ghost icon" id="btn-theme" title="Toggle theme" aria-label="Toggle theme">◐</button>
+  </div>
+</header>
+
+<main class="layout">
+  <section class="map-wrap">
+    <div id="map"></div>
+    <div class="legend" id="legend"></div>
+    <div class="map-tools">
+      <button data-zoom="all">All projects</button>
+      <button data-zoom="augusta">Augusta</button>
+      <button data-zoom="savannah">Savannah</button>
+    </div>
+  </section>
+
+  <aside class="side">
+    <nav class="tabs" role="tablist">
+      <button role="tab" class="active" data-tab="list">Opportunities <span class="count" id="count"></span></button>
+      <button role="tab" data-tab="timeline">Timeline</button>
+      <button role="tab" data-tab="detail" id="tab-detail" disabled>Detail</button>
+    </nav>
+
+    <div class="filters" id="filters">
+      <label>Max distance <output id="o-km">40 km</output>
+        <input type="range" id="f-km" min="1" max="40" step="1" value="40"></label>
+      <label>Max in-service gap <output id="o-gap">any</output>
+        <input type="range" id="f-gap" min="0" max="10" step="0.5" value="10"></label>
+      <label>Timeline weight <output id="o-tw">40%</output>
+        <input type="range" id="f-tw" min="0" max="100" step="5" value="40"></label>
+      <div class="row">
+        <label class="chk"><input type="checkbox" id="f-overlap"> Build windows overlap</label>
+        <label class="chk"><input type="checkbox" id="f-partners"> Include GTC / MEAG</label>
+      </div>
+      <div class="row">
+        <label class="sel">Location confidence
+          <select id="f-conf"><option value="1">any</option><option value="2">medium+</option><option value="3">high only</option></select></label>
+        <label class="sel">Group
+          <select id="f-group"><option value="pair">every pair</option><option value="cluster">best per project</option></select></label>
+      </div>
+    </div>
+
+    <div class="panel active" id="panel-list"><ol class="opps" id="opps"></ol></div>
+    <div class="panel" id="panel-timeline"><div id="gantt"></div></div>
+    <div class="panel" id="panel-detail"><div id="detail"></div></div>
+  </aside>
+</main>
+
+<dialog id="method">
+  <article>
+    <header><h2>How GridLock works</h2><button class="ghost icon" data-close aria-label="Close">✕</button></header>
+    <div id="method-body"></div>
+  </article>
+</dialog>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

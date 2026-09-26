@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+.venv/
+# Challenge-provided material not needed to run the tool
+data/raw/Opportunities/

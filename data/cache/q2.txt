@@ -1,0 +1,5 @@
+[out:json][timeout:120];
+(
+  nwr["power"]["name"~"Hooks|Ritter|Killian|Purrysburg|Summer|Square D|Hopkins|Riverport|Scout|Dawson|Aiken|Cameron|Summerville|Santee|Saluda|Fort Johnson|Ft Johnson|Edenwood|Williams|CIP|Coit|Gills|Bayfront|Union Pier|St. George|St George|Saint George|Helena|Frogmore|Eastover|Wateree|Stevens Creek|Urquhart|Plumb|Okatie|Jasper|Bluffton|Queensboro|Yemassee|Goose Creek|Big Ogeechee|Rice Hope|Hyundai|Goldens|Meldrim|Thurmond|Toolebeck|Batesburg|Wagener|Elloree|Pineland|Ward|Canadys|Church Creek",i](31.9,-83.5,35.3,-78.5);
+);
+out center tags;

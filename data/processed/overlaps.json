@@ -1,0 +1,2018 @@
+[
+ {
+  "a": "DESC-22",
+  "b": "GA-20277",
+  "b_utility_code": "GPC",
+  "distance_km": 2.75,
+  "distance_mi": 1.71,
+  "tier": "site",
+  "closest_a": [
+   -81.06921,
+   32.22993
+  ],
+  "closest_b": [
+   -81.0972,
+   32.237
+  ],
+  "isd_gap_days": 152,
+  "construction_overlap_days": 388,
+  "a_conf": "medium",
+  "b_conf": "medium",
+  "parallel_km": 0.0,
+  "score": 54.5,
+  "rank": 1,
+  "id": "OVL-001"
+ },
+ {
+  "a": "DESC-23",
+  "b": "GA-20065",
+  "b_utility_code": "GPC",
+  "distance_km": 4.81,
+  "distance_mi": 2.99,
+  "tier": "site",
+  "closest_a": [
+   -81.1246,
+   32.35912
+  ],
+  "closest_b": [
+   -81.17511,
+   32.35212
+  ],
+  "isd_gap_days": 517,
+  "construction_overlap_days": 23,
+  "a_conf": "high",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 52.5,
+  "rank": 2,
+  "id": "OVL-002"
+ },
+ {
+  "a": "DESC-03",
+  "b": "GA-20277",
+  "b_utility_code": "GPC",
+  "distance_km": 4.51,
+  "distance_mi": 2.8,
+  "tier": "site",
+  "closest_a": [
+   -81.1246,
+   32.35912
+  ],
+  "closest_b": [
+   -81.16623,
+   32.339
+  ],
+  "isd_gap_days": 517,
+  "construction_overlap_days": 23,
+  "a_conf": "high",
+  "b_conf": "medium",
+  "parallel_km": 0.0,
+  "score": 48.3,
+  "rank": 3,
+  "id": "OVL-003"
+ },
+ {
+  "a": "DESC-23",
+  "b": "GA-20277",
+  "b_utility_code": "GPC",
+  "distance_km": 4.51,
+  "distance_mi": 2.8,
+  "tier": "site",
+  "closest_a": [
+   -81.1246,
+   32.35912
+  ],
+  "closest_b": [
+   -81.16623,
+   32.339
+  ],
+  "isd_gap_days": 152,
+  "construction_overlap_days": 388,
+  "a_conf": "high",
+  "b_conf": "medium",
+  "parallel_km": 0.0,
+  "score": 48.3,
+  "rank": 4,
+  "id": "OVL-004"
+ },
+ {
+  "a": "DESC-31",
+  "b": "GA-20793",
+  "b_utility_code": "GPC",
+  "distance_km": 0.0,
+  "distance_mi": 0.0,
+  "tier": "cross",
+  "closest_a": [
+   -82.19593,
+   33.66013
+  ],
+  "closest_b": [
+   -82.19593,
+   33.66013
+  ],
+  "isd_gap_days": 3074,
+  "construction_overlap_days": 0,
+  "a_conf": "low",
+  "b_conf": "high",
+  "parallel_km": 1.62,
+  "score": 45.0,
+  "rank": 5,
+  "id": "OVL-005"
+ },
+ {
+  "a": "DESC-31",
+  "b": "GA-20794",
+  "b_utility_code": "GPC",
+  "distance_km": 0.0,
+  "distance_mi": 0.0,
+  "tier": "cross",
+  "closest_a": [
+   -82.19593,
+   33.66013
+  ],
+  "closest_b": [
+   -82.19593,
+   33.66013
+  ],
+  "isd_gap_days": 3074,
+  "construction_overlap_days": 0,
+  "a_conf": "low",
+  "b_conf": "high",
+  "parallel_km": 1.62,
+  "score": 45.0,
+  "rank": 6,
+  "id": "OVL-006"
+ },
+ {
+  "a": "DESC-03",
+  "b": "GA-20065",
+  "b_utility_code": "GPC",
+  "distance_km": 4.81,
+  "distance_mi": 2.99,
+  "tier": "site",
+  "closest_a": [
+   -81.1246,
+   32.35912
+  ],
+  "closest_b": [
+   -81.17511,
+   32.35212
+  ],
+  "isd_gap_days": 882,
+  "construction_overlap_days": 0,
+  "a_conf": "high",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 39.8,
+  "rank": 7,
+  "id": "OVL-007"
+ },
+ {
+  "a": "DESC-22",
+  "b": "GA-20785",
+  "b_utility_code": "GPC",
+  "distance_km": 9.13,
+  "distance_mi": 5.67,
+  "tier": "crew",
+  "closest_a": [
+   -81.0758,
+   32.2113
+  ],
+  "closest_b": [
+   -81.16144,
+   32.17262
+  ],
+  "isd_gap_days": 517,
+  "construction_overlap_days": 23,
+  "a_conf": "medium",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 34.7,
+  "rank": 8,
+  "id": "OVL-008"
+ },
+ {
+  "a": "DESC-35",
+  "b": "GA-16007",
+  "b_utility_code": "GPC",
+  "distance_km": 9.32,
+  "distance_mi": 5.79,
+  "tier": "crew",
+  "closest_a": [
+   -81.9111,
+   33.4329
+  ],
+  "closest_b": [
+   -81.9957,
+   33.4782
+  ],
+  "isd_gap_days": 72,
+  "construction_overlap_days": 468,
+  "a_conf": "high",
+  "b_conf": "medium",
+  "parallel_km": 0.0,
+  "score": 34.5,
+  "rank": 9,
+  "id": "OVL-009"
+ },
+ {
+  "a": "DESC-10",
+  "b": "GA-20277",
+  "b_utility_code": "GPC",
+  "distance_km": 10.62,
+  "distance_mi": 6.6,
+  "tier": "crew",
+  "closest_a": [
+   -81.03249,
+   32.33376
+  ],
+  "closest_b": [
+   -81.13058,
+   32.28632
+  ],
+  "isd_gap_days": 365,
+  "construction_overlap_days": 175,
+  "a_conf": "high",
+  "b_conf": "medium",
+  "parallel_km": 0.0,
+  "score": 33.1,
+  "rank": 10,
+  "id": "OVL-010"
+ },
+ {
+  "a": "DESC-23",
+  "b": "GA-20785",
+  "b_utility_code": "GPC",
+  "distance_km": 14.64,
+  "distance_mi": 9.1,
+  "tier": "crew",
+  "closest_a": [
+   -81.1246,
+   32.35912
+  ],
+  "closest_b": [
+   -81.20947,
+   32.2487
+  ],
+  "isd_gap_days": 517,
+  "construction_overlap_days": 23,
+  "a_conf": "high",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 31.7,
+  "rank": 11,
+  "id": "OVL-011"
+ },
+ {
+  "a": "DESC-22",
+  "b": "GA-20065",
+  "b_utility_code": "GPC",
+  "distance_km": 13.23,
+  "distance_mi": 8.22,
+  "tier": "crew",
+  "closest_a": [
+   -81.07463,
+   32.21462
+  ],
+  "closest_b": [
+   -81.20947,
+   32.2487
+  ],
+  "isd_gap_days": 517,
+  "construction_overlap_days": 23,
+  "a_conf": "medium",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 30.1,
+  "rank": 12,
+  "id": "OVL-012"
+ },
+ {
+  "a": "DESC-43",
+  "b": "GA-16007",
+  "b_utility_code": "GPC",
+  "distance_km": 9.33,
+  "distance_mi": 5.79,
+  "tier": "crew",
+  "closest_a": [
+   -81.9111,
+   33.4329
+  ],
+  "closest_b": [
+   -81.9957,
+   33.4782
+  ],
+  "isd_gap_days": 578,
+  "construction_overlap_days": 0,
+  "a_conf": "medium",
+  "b_conf": "medium",
+  "parallel_km": 0.0,
+  "score": 29.0,
+  "rank": 13,
+  "id": "OVL-013"
+ },
+ {
+  "a": "DESC-14",
+  "b": "GA-16007",
+  "b_utility_code": "GPC",
+  "distance_km": 10.71,
+  "distance_mi": 6.65,
+  "tier": "crew",
+  "closest_a": [
+   -82.05136,
+   33.5626
+  ],
+  "closest_b": [
+   -81.9957,
+   33.4782
+  ],
+  "isd_gap_days": 517,
+  "construction_overlap_days": 23,
+  "a_conf": "low",
+  "b_conf": "medium",
+  "parallel_km": 0.0,
+  "score": 27.5,
+  "rank": 14,
+  "id": "OVL-014"
+ },
+ {
+  "a": "DESC-15",
+  "b": "GA-16007",
+  "b_utility_code": "GPC",
+  "distance_km": 10.71,
+  "distance_mi": 6.65,
+  "tier": "crew",
+  "closest_a": [
+   -82.05136,
+   33.5626
+  ],
+  "closest_b": [
+   -81.9957,
+   33.4782
+  ],
+  "isd_gap_days": 152,
+  "construction_overlap_days": 388,
+  "a_conf": "low",
+  "b_conf": "medium",
+  "parallel_km": 0.0,
+  "score": 27.5,
+  "rank": 15,
+  "id": "OVL-015"
+ },
+ {
+  "a": "DESC-14",
+  "b": "GA-20793",
+  "b_utility_code": "GPC",
+  "distance_km": 3.05,
+  "distance_mi": 1.89,
+  "tier": "site",
+  "closest_a": [
+   -82.1621,
+   33.6589
+  ],
+  "closest_b": [
+   -82.19441,
+   33.65364
+  ],
+  "isd_gap_days": 3074,
+  "construction_overlap_days": 0,
+  "a_conf": "low",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 26.7,
+  "rank": 16,
+  "id": "OVL-016"
+ },
+ {
+  "a": "DESC-14",
+  "b": "GA-20794",
+  "b_utility_code": "GPC",
+  "distance_km": 3.05,
+  "distance_mi": 1.89,
+  "tier": "site",
+  "closest_a": [
+   -82.1621,
+   33.6589
+  ],
+  "closest_b": [
+   -82.19441,
+   33.65364
+  ],
+  "isd_gap_days": 3074,
+  "construction_overlap_days": 0,
+  "a_conf": "low",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 26.7,
+  "rank": 17,
+  "id": "OVL-017"
+ },
+ {
+  "a": "DESC-15",
+  "b": "GA-20793",
+  "b_utility_code": "GPC",
+  "distance_km": 3.05,
+  "distance_mi": 1.89,
+  "tier": "site",
+  "closest_a": [
+   -82.1621,
+   33.6589
+  ],
+  "closest_b": [
+   -82.19441,
+   33.65364
+  ],
+  "isd_gap_days": 2709,
+  "construction_overlap_days": 0,
+  "a_conf": "low",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 26.7,
+  "rank": 18,
+  "id": "OVL-018"
+ },
+ {
+  "a": "DESC-15",
+  "b": "GA-20794",
+  "b_utility_code": "GPC",
+  "distance_km": 3.05,
+  "distance_mi": 1.89,
+  "tier": "site",
+  "closest_a": [
+   -82.1621,
+   33.6589
+  ],
+  "closest_b": [
+   -82.19441,
+   33.65364
+  ],
+  "isd_gap_days": 2709,
+  "construction_overlap_days": 0,
+  "a_conf": "low",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 26.7,
+  "rank": 19,
+  "id": "OVL-019"
+ },
+ {
+  "a": "DESC-22",
+  "b": "GA-20067",
+  "b_utility_code": "GPC",
+  "distance_km": 16.27,
+  "distance_mi": 10.11,
+  "tier": "crew",
+  "closest_a": [
+   -81.0758,
+   32.2113
+  ],
+  "closest_b": [
+   -81.04838,
+   32.06683
+  ],
+  "isd_gap_days": 213,
+  "construction_overlap_days": 327,
+  "a_conf": "medium",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 26.7,
+  "rank": 20,
+  "id": "OVL-020"
+ },
+ {
+  "a": "DESC-22",
+  "b": "GA-20066",
+  "b_utility_code": "GPC",
+  "distance_km": 16.27,
+  "distance_mi": 10.11,
+  "tier": "crew",
+  "closest_a": [
+   -81.0758,
+   32.2113
+  ],
+  "closest_b": [
+   -81.04838,
+   32.06683
+  ],
+  "isd_gap_days": 152,
+  "construction_overlap_days": 213,
+  "a_conf": "medium",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 26.7,
+  "rank": 21,
+  "id": "OVL-021"
+ },
+ {
+  "a": "DESC-10",
+  "b": "GA-20065",
+  "b_utility_code": "GPC",
+  "distance_km": 13.56,
+  "distance_mi": 8.43,
+  "tier": "crew",
+  "closest_a": [
+   -81.03249,
+   32.33376
+  ],
+  "closest_b": [
+   -81.17511,
+   32.35212
+  ],
+  "isd_gap_days": 730,
+  "construction_overlap_days": 0,
+  "a_conf": "high",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 26.4,
+  "rank": 22,
+  "id": "OVL-022"
+ },
+ {
+  "a": "DESC-03",
+  "b": "GA-20785",
+  "b_utility_code": "GPC",
+  "distance_km": 14.64,
+  "distance_mi": 9.1,
+  "tier": "crew",
+  "closest_a": [
+   -81.1246,
+   32.35912
+  ],
+  "closest_b": [
+   -81.20947,
+   32.2487
+  ],
+  "isd_gap_days": 882,
+  "construction_overlap_days": 0,
+  "a_conf": "high",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 24.0,
+  "rank": 23,
+  "id": "OVL-023"
+ },
+ {
+  "a": "DESC-22",
+  "b": "GA-20989",
+  "b_utility_code": "GPC",
+  "distance_km": 10.66,
+  "distance_mi": 6.62,
+  "tier": "crew",
+  "closest_a": [
+   -81.0758,
+   32.2113
+  ],
+  "closest_b": [
+   -81.1871,
+   32.2293
+  ],
+  "isd_gap_days": 1248,
+  "construction_overlap_days": 0,
+  "a_conf": "medium",
+  "b_conf": "medium",
+  "parallel_km": 0.0,
+  "score": 21.7,
+  "rank": 24,
+  "id": "OVL-024"
+ },
+ {
+  "a": "DESC-43",
+  "b": "GA-21116",
+  "b_utility_code": "GPC",
+  "distance_km": 14.81,
+  "distance_mi": 9.2,
+  "tier": "crew",
+  "closest_a": [
+   -81.9111,
+   33.4329
+  ],
+  "closest_b": [
+   -81.9953,
+   33.3198
+  ],
+  "isd_gap_days": 883,
+  "construction_overlap_days": 0,
+  "a_conf": "medium",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 21.5,
+  "rank": 25,
+  "id": "OVL-025"
+ },
+ {
+  "a": "DESC-10",
+  "b": "GA-20785",
+  "b_utility_code": "GPC",
+  "distance_km": 19.14,
+  "distance_mi": 11.9,
+  "tier": "crew",
+  "closest_a": [
+   -81.03249,
+   32.33376
+  ],
+  "closest_b": [
+   -81.20947,
+   32.2487
+  ],
+  "isd_gap_days": 730,
+  "construction_overlap_days": 0,
+  "a_conf": "high",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 20.9,
+  "rank": 26,
+  "id": "OVL-026"
+ },
+ {
+  "a": "DESC-35",
+  "b": "GA-21116",
+  "b_utility_code": "GPC",
+  "distance_km": 14.81,
+  "distance_mi": 9.2,
+  "tier": "crew",
+  "closest_a": [
+   -81.9111,
+   33.4329
+  ],
+  "closest_b": [
+   -81.9953,
+   33.3198
+  ],
+  "isd_gap_days": 1389,
+  "construction_overlap_days": 0,
+  "a_conf": "high",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 19.5,
+  "rank": 27,
+  "id": "OVL-027"
+ },
+ {
+  "a": "DESC-22",
+  "b": "GA-20783",
+  "b_utility_code": "GPC",
+  "distance_km": 17.74,
+  "distance_mi": 11.03,
+  "tier": "crew",
+  "closest_a": [
+   -81.0758,
+   32.2113
+  ],
+  "closest_b": [
+   -81.18884,
+   32.08358
+  ],
+  "isd_gap_days": 883,
+  "construction_overlap_days": 0,
+  "a_conf": "medium",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 19.0,
+  "rank": 28,
+  "id": "OVL-028"
+ },
+ {
+  "a": "DESC-23",
+  "b": "GA-20989",
+  "b_utility_code": "GPC",
+  "distance_km": 15.59,
+  "distance_mi": 9.68,
+  "tier": "crew",
+  "closest_a": [
+   -81.1246,
+   32.35912
+  ],
+  "closest_b": [
+   -81.1871,
+   32.2293
+  ],
+  "isd_gap_days": 1248,
+  "construction_overlap_days": 0,
+  "a_conf": "high",
+  "b_conf": "medium",
+  "parallel_km": 0.0,
+  "score": 18.1,
+  "rank": 29,
+  "id": "OVL-029"
+ },
+ {
+  "a": "DESC-10",
+  "b": "GA-20067",
+  "b_utility_code": "GPC",
+  "distance_km": 25.69,
+  "distance_mi": 15.96,
+  "tier": "crew",
+  "closest_a": [
+   -80.89946,
+   32.26043
+  ],
+  "closest_b": [
+   -81.04838,
+   32.06683
+  ],
+  "isd_gap_days": 0,
+  "construction_overlap_days": 540,
+  "a_conf": "high",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 17.9,
+  "rank": 30,
+  "id": "OVL-030"
+ },
+ {
+  "a": "DESC-14",
+  "b": "GA-17993",
+  "b_utility_code": "GPC",
+  "distance_km": 9.28,
+  "distance_mi": 5.77,
+  "tier": "crew",
+  "closest_a": [
+   -82.09636,
+   33.60173
+  ],
+  "closest_b": [
+   -82.16865,
+   33.54399
+  ],
+  "isd_gap_days": 3652,
+  "construction_overlap_days": 0,
+  "a_conf": "low",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 17.3,
+  "rank": 31,
+  "id": "OVL-031"
+ },
+ {
+  "a": "DESC-15",
+  "b": "GA-17993",
+  "b_utility_code": "GPC",
+  "distance_km": 9.28,
+  "distance_mi": 5.77,
+  "tier": "crew",
+  "closest_a": [
+   -82.09636,
+   33.60173
+  ],
+  "closest_b": [
+   -82.16865,
+   33.54399
+  ],
+  "isd_gap_days": 3287,
+  "construction_overlap_days": 0,
+  "a_conf": "low",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 17.3,
+  "rank": 32,
+  "id": "OVL-032"
+ },
+ {
+  "a": "DESC-03",
+  "b": "GA-20989",
+  "b_utility_code": "GPC",
+  "distance_km": 15.59,
+  "distance_mi": 9.68,
+  "tier": "crew",
+  "closest_a": [
+   -81.1246,
+   32.35912
+  ],
+  "closest_b": [
+   -81.1871,
+   32.2293
+  ],
+  "isd_gap_days": 1613,
+  "construction_overlap_days": 0,
+  "a_conf": "high",
+  "b_conf": "medium",
+  "parallel_km": 0.0,
+  "score": 16.5,
+  "rank": 33,
+  "id": "OVL-033"
+ },
+ {
+  "a": "DESC-22",
+  "b": "GA-21023",
+  "b_utility_code": "GPC",
+  "distance_km": 17.75,
+  "distance_mi": 11.03,
+  "tier": "crew",
+  "closest_a": [
+   -81.0758,
+   32.2113
+  ],
+  "closest_b": [
+   -81.18872,
+   32.08351
+  ],
+  "isd_gap_days": 1248,
+  "construction_overlap_days": 0,
+  "a_conf": "medium",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 16.5,
+  "rank": 34,
+  "id": "OVL-034"
+ },
+ {
+  "a": "DESC-10",
+  "b": "GA-20066",
+  "b_utility_code": "GPC",
+  "distance_km": 25.69,
+  "distance_mi": 15.96,
+  "tier": "crew",
+  "closest_a": [
+   -80.89945,
+   32.26042
+  ],
+  "closest_b": [
+   -81.04838,
+   32.06683
+  ],
+  "isd_gap_days": 365,
+  "construction_overlap_days": 0,
+  "a_conf": "high",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 16.1,
+  "rank": 35,
+  "id": "OVL-035"
+ },
+ {
+  "a": "DESC-31",
+  "b": "GA-17993",
+  "b_utility_code": "GPC",
+  "distance_km": 12.79,
+  "distance_mi": 7.95,
+  "tier": "crew",
+  "closest_a": [
+   -82.16264,
+   33.65892
+  ],
+  "closest_b": [
+   -82.16865,
+   33.54399
+  ],
+  "isd_gap_days": 3652,
+  "construction_overlap_days": 0,
+  "a_conf": "low",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 15.3,
+  "rank": 36,
+  "id": "OVL-036"
+ },
+ {
+  "a": "DESC-22",
+  "b": "GA-21006",
+  "b_utility_code": "GPC",
+  "distance_km": 19.99,
+  "distance_mi": 12.42,
+  "tier": "crew",
+  "closest_a": [
+   -81.0758,
+   32.2113
+  ],
+  "closest_b": [
+   -81.14446,
+   32.04123
+  ],
+  "isd_gap_days": 1248,
+  "construction_overlap_days": 0,
+  "a_conf": "medium",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 14.8,
+  "rank": 37,
+  "id": "OVL-037"
+ },
+ {
+  "a": "DESC-22",
+  "b": "GA-20784",
+  "b_utility_code": "GPC",
+  "distance_km": 18.3,
+  "distance_mi": 11.37,
+  "tier": "crew",
+  "closest_a": [
+   -81.0758,
+   32.2113
+  ],
+  "closest_b": [
+   -81.22691,
+   32.10772
+  ],
+  "isd_gap_days": 2344,
+  "construction_overlap_days": 0,
+  "a_conf": "medium",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 14.6,
+  "rank": 38,
+  "id": "OVL-038"
+ },
+ {
+  "a": "DESC-10",
+  "b": "GA-20989",
+  "b_utility_code": "GPC",
+  "distance_km": 18.61,
+  "distance_mi": 11.56,
+  "tier": "crew",
+  "closest_a": [
+   -81.03249,
+   32.33376
+  ],
+  "closest_b": [
+   -81.1871,
+   32.2293
+  ],
+  "isd_gap_days": 1461,
+  "construction_overlap_days": 0,
+  "a_conf": "high",
+  "b_conf": "medium",
+  "parallel_km": 0.0,
+  "score": 14.4,
+  "rank": 39,
+  "id": "OVL-039"
+ },
+ {
+  "a": "DESC-31",
+  "b": "GA-16007",
+  "b_utility_code": "GPC",
+  "distance_km": 25.33,
+  "distance_mi": 15.74,
+  "tier": "crew",
+  "closest_a": [
+   -82.1621,
+   33.6589
+  ],
+  "closest_b": [
+   -81.9957,
+   33.4782
+  ],
+  "isd_gap_days": 517,
+  "construction_overlap_days": 23,
+  "a_conf": "low",
+  "b_conf": "medium",
+  "parallel_km": 0.0,
+  "score": 13.8,
+  "rank": 40,
+  "id": "OVL-040"
+ },
+ {
+  "a": "DESC-22",
+  "b": "GA-20407",
+  "b_utility_code": "GPC",
+  "distance_km": 20.67,
+  "distance_mi": 12.85,
+  "tier": "crew",
+  "closest_a": [
+   -81.0758,
+   32.2113
+  ],
+  "closest_b": [
+   -81.08658,
+   32.0256
+  ],
+  "isd_gap_days": 883,
+  "construction_overlap_days": 0,
+  "a_conf": "medium",
+  "b_conf": "low",
+  "parallel_km": 0.0,
+  "score": 13.7,
+  "rank": 41,
+  "id": "OVL-041"
+ },
+ {
+  "a": "DESC-22",
+  "b": "GA-19523",
+  "b_utility_code": "GPC",
+  "distance_km": 28.22,
+  "distance_mi": 17.54,
+  "tier": "crew",
+  "closest_a": [
+   -81.0758,
+   32.2113
+  ],
+  "closest_b": [
+   -81.36838,
+   32.15528
+  ],
+  "isd_gap_days": 250,
+  "construction_overlap_days": 290,
+  "a_conf": "medium",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 13.3,
+  "rank": 42,
+  "id": "OVL-042"
+ },
+ {
+  "a": "DESC-22",
+  "b": "GA-17075",
+  "b_utility_code": "GPC",
+  "distance_km": 28.21,
+  "distance_mi": 17.53,
+  "tier": "crew",
+  "closest_a": [
+   -81.0758,
+   32.2113
+  ],
+  "closest_b": [
+   -81.25315,
+   32.00679
+  ],
+  "isd_gap_days": 0,
+  "construction_overlap_days": 540,
+  "a_conf": "medium",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 13.3,
+  "rank": 43,
+  "id": "OVL-043"
+ },
+ {
+  "a": "DESC-03",
+  "b": "GA-20067",
+  "b_utility_code": "GPC",
+  "distance_km": 29.72,
+  "distance_mi": 18.47,
+  "tier": "crew",
+  "closest_a": [
+   -81.03249,
+   32.33376
+  ],
+  "closest_b": [
+   -81.04838,
+   32.06683
+  ],
+  "isd_gap_days": 152,
+  "construction_overlap_days": 388,
+  "a_conf": "high",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 12.9,
+  "rank": 44,
+  "id": "OVL-044"
+ },
+ {
+  "a": "DESC-23",
+  "b": "GA-20067",
+  "b_utility_code": "GPC",
+  "distance_km": 29.72,
+  "distance_mi": 18.47,
+  "tier": "crew",
+  "closest_a": [
+   -81.03249,
+   32.33376
+  ],
+  "closest_b": [
+   -81.04838,
+   32.06683
+  ],
+  "isd_gap_days": 213,
+  "construction_overlap_days": 327,
+  "a_conf": "high",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 12.9,
+  "rank": 45,
+  "id": "OVL-045"
+ },
+ {
+  "a": "DESC-23",
+  "b": "GA-20066",
+  "b_utility_code": "GPC",
+  "distance_km": 29.72,
+  "distance_mi": 18.47,
+  "tier": "crew",
+  "closest_a": [
+   -81.03249,
+   32.33376
+  ],
+  "closest_b": [
+   -81.04838,
+   32.06683
+  ],
+  "isd_gap_days": 152,
+  "construction_overlap_days": 213,
+  "a_conf": "high",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 12.9,
+  "rank": 46,
+  "id": "OVL-046"
+ },
+ {
+  "a": "DESC-22",
+  "b": "GA-19966",
+  "b_utility_code": "GPC",
+  "distance_km": 27.74,
+  "distance_mi": 17.24,
+  "tier": "crew",
+  "closest_a": [
+   -81.0758,
+   32.2113
+  ],
+  "closest_b": [
+   -81.29,
+   32.04
+  ],
+  "isd_gap_days": 152,
+  "construction_overlap_days": 388,
+  "a_conf": "medium",
+  "b_conf": "low",
+  "parallel_km": 0.0,
+  "score": 11.5,
+  "rank": 47,
+  "id": "OVL-047"
+ },
+ {
+  "a": "DESC-03",
+  "b": "GA-20066",
+  "b_utility_code": "GPC",
+  "distance_km": 29.72,
+  "distance_mi": 18.47,
+  "tier": "crew",
+  "closest_a": [
+   -81.03249,
+   32.33376
+  ],
+  "closest_b": [
+   -81.04838,
+   32.06683
+  ],
+  "isd_gap_days": 517,
+  "construction_overlap_days": 0,
+  "a_conf": "high",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 11.0,
+  "rank": 48,
+  "id": "OVL-048"
+ },
+ {
+  "a": "DESC-23",
+  "b": "GA-20783",
+  "b_utility_code": "GPC",
+  "distance_km": 29.56,
+  "distance_mi": 18.37,
+  "tier": "crew",
+  "closest_a": [
+   -81.1246,
+   32.35912
+  ],
+  "closest_b": [
+   -81.22691,
+   32.10772
+  ],
+  "isd_gap_days": 883,
+  "construction_overlap_days": 0,
+  "a_conf": "high",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 9.9,
+  "rank": 49,
+  "id": "OVL-049"
+ },
+ {
+  "a": "DESC-35",
+  "b": "GA-20793",
+  "b_utility_code": "GPC",
+  "distance_km": 26.88,
+  "distance_mi": 16.7,
+  "tier": "crew",
+  "closest_a": [
+   -81.9111,
+   33.4329
+  ],
+  "closest_b": [
+   -82.16865,
+   33.54399
+  ],
+  "isd_gap_days": 2485,
+  "construction_overlap_days": 0,
+  "a_conf": "high",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 9.8,
+  "rank": 50,
+  "id": "OVL-050"
+ },
+ {
+  "a": "DESC-35",
+  "b": "GA-20794",
+  "b_utility_code": "GPC",
+  "distance_km": 26.88,
+  "distance_mi": 16.7,
+  "tier": "crew",
+  "closest_a": [
+   -81.9111,
+   33.4329
+  ],
+  "closest_b": [
+   -82.16865,
+   33.54399
+  ],
+  "isd_gap_days": 2485,
+  "construction_overlap_days": 0,
+  "a_conf": "high",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 9.8,
+  "rank": 51,
+  "id": "OVL-051"
+ },
+ {
+  "a": "DESC-35",
+  "b": "GA-17993",
+  "b_utility_code": "GPC",
+  "distance_km": 26.89,
+  "distance_mi": 16.71,
+  "tier": "crew",
+  "closest_a": [
+   -81.9111,
+   33.4329
+  ],
+  "closest_b": [
+   -82.16865,
+   33.54399
+  ],
+  "isd_gap_days": 3063,
+  "construction_overlap_days": 0,
+  "a_conf": "high",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 9.8,
+  "rank": 52,
+  "id": "OVL-052"
+ },
+ {
+  "a": "DESC-03",
+  "b": "GA-19523",
+  "b_utility_code": "GPC",
+  "distance_km": 32.24,
+  "distance_mi": 20.03,
+  "tier": "crew",
+  "closest_a": [
+   -81.1246,
+   32.35912
+  ],
+  "closest_b": [
+   -81.36838,
+   32.15528
+  ],
+  "isd_gap_days": 115,
+  "construction_overlap_days": 425,
+  "a_conf": "high",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 9.7,
+  "rank": 53,
+  "id": "OVL-053"
+ },
+ {
+  "a": "DESC-23",
+  "b": "GA-19523",
+  "b_utility_code": "GPC",
+  "distance_km": 32.24,
+  "distance_mi": 20.03,
+  "tier": "crew",
+  "closest_a": [
+   -81.1246,
+   32.35912
+  ],
+  "closest_b": [
+   -81.36838,
+   32.15528
+  ],
+  "isd_gap_days": 250,
+  "construction_overlap_days": 290,
+  "a_conf": "high",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 9.7,
+  "rank": 54,
+  "id": "OVL-054"
+ },
+ {
+  "a": "DESC-43",
+  "b": "GA-20793",
+  "b_utility_code": "GPC",
+  "distance_km": 26.88,
+  "distance_mi": 16.7,
+  "tier": "crew",
+  "closest_a": [
+   -81.9111,
+   33.4329
+  ],
+  "closest_b": [
+   -82.16865,
+   33.54399
+  ],
+  "isd_gap_days": 1979,
+  "construction_overlap_days": 0,
+  "a_conf": "medium",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 8.9,
+  "rank": 55,
+  "id": "OVL-055"
+ },
+ {
+  "a": "DESC-43",
+  "b": "GA-20794",
+  "b_utility_code": "GPC",
+  "distance_km": 26.88,
+  "distance_mi": 16.7,
+  "tier": "crew",
+  "closest_a": [
+   -81.9111,
+   33.4329
+  ],
+  "closest_b": [
+   -82.16865,
+   33.54399
+  ],
+  "isd_gap_days": 1979,
+  "construction_overlap_days": 0,
+  "a_conf": "medium",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 8.9,
+  "rank": 56,
+  "id": "OVL-056"
+ },
+ {
+  "a": "DESC-43",
+  "b": "GA-17993",
+  "b_utility_code": "GPC",
+  "distance_km": 26.9,
+  "distance_mi": 16.71,
+  "tier": "crew",
+  "closest_a": [
+   -81.9111,
+   33.4329
+  ],
+  "closest_b": [
+   -82.16865,
+   33.54399
+  ],
+  "isd_gap_days": 2557,
+  "construction_overlap_days": 0,
+  "a_conf": "medium",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 8.8,
+  "rank": 57,
+  "id": "OVL-057"
+ },
+ {
+  "a": "DESC-03",
+  "b": "GA-20783",
+  "b_utility_code": "GPC",
+  "distance_km": 29.56,
+  "distance_mi": 18.37,
+  "tier": "crew",
+  "closest_a": [
+   -81.1246,
+   32.35912
+  ],
+  "closest_b": [
+   -81.22691,
+   32.10772
+  ],
+  "isd_gap_days": 1248,
+  "construction_overlap_days": 0,
+  "a_conf": "high",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 8.6,
+  "rank": 58,
+  "id": "OVL-058"
+ },
+ {
+  "a": "DESC-22",
+  "b": "GA-20796",
+  "b_utility_code": "GPC",
+  "distance_km": 28.22,
+  "distance_mi": 17.54,
+  "tier": "crew",
+  "closest_a": [
+   -81.0758,
+   32.2113
+  ],
+  "closest_b": [
+   -81.36838,
+   32.15528
+  ],
+  "isd_gap_days": 2709,
+  "construction_overlap_days": 0,
+  "a_conf": "medium",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 8.0,
+  "rank": 59,
+  "id": "OVL-059"
+ },
+ {
+  "a": "DESC-22",
+  "b": "GA-20787",
+  "b_utility_code": "GPC",
+  "distance_km": 28.21,
+  "distance_mi": 17.53,
+  "tier": "crew",
+  "closest_a": [
+   -81.0758,
+   32.2113
+  ],
+  "closest_b": [
+   -81.25315,
+   32.00679
+  ],
+  "isd_gap_days": 3074,
+  "construction_overlap_days": 0,
+  "a_conf": "medium",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 8.0,
+  "rank": 60,
+  "id": "OVL-060"
+ },
+ {
+  "a": "DESC-03",
+  "b": "GA-20784",
+  "b_utility_code": "GPC",
+  "distance_km": 29.53,
+  "distance_mi": 18.35,
+  "tier": "crew",
+  "closest_a": [
+   -81.1246,
+   32.35912
+  ],
+  "closest_b": [
+   -81.24058,
+   32.11232
+  ],
+  "isd_gap_days": 2709,
+  "construction_overlap_days": 0,
+  "a_conf": "high",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 7.9,
+  "rank": 61,
+  "id": "OVL-061"
+ },
+ {
+  "a": "DESC-23",
+  "b": "GA-20784",
+  "b_utility_code": "GPC",
+  "distance_km": 29.53,
+  "distance_mi": 18.35,
+  "tier": "crew",
+  "closest_a": [
+   -81.1246,
+   32.35912
+  ],
+  "closest_b": [
+   -81.24058,
+   32.11232
+  ],
+  "isd_gap_days": 2344,
+  "construction_overlap_days": 0,
+  "a_conf": "high",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 7.9,
+  "rank": 62,
+  "id": "OVL-062"
+ },
+ {
+  "a": "DESC-10",
+  "b": "GA-20783",
+  "b_utility_code": "GPC",
+  "distance_km": 31.09,
+  "distance_mi": 19.32,
+  "tier": "crew",
+  "closest_a": [
+   -81.03249,
+   32.33376
+  ],
+  "closest_b": [
+   -81.22691,
+   32.10772
+  ],
+  "isd_gap_days": 1096,
+  "construction_overlap_days": 0,
+  "a_conf": "high",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 7.8,
+  "rank": 63,
+  "id": "OVL-063"
+ },
+ {
+  "a": "DESC-23",
+  "b": "GA-21023",
+  "b_utility_code": "GPC",
+  "distance_km": 31.01,
+  "distance_mi": 19.27,
+  "tier": "crew",
+  "closest_a": [
+   -81.08675,
+   32.3487
+  ],
+  "closest_b": [
+   -81.18872,
+   32.08351
+  ],
+  "isd_gap_days": 1248,
+  "construction_overlap_days": 0,
+  "a_conf": "high",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 7.4,
+  "rank": 64,
+  "id": "OVL-064"
+ },
+ {
+  "a": "DESC-14",
+  "b": "GA-21116",
+  "b_utility_code": "GPC",
+  "distance_km": 27.49,
+  "distance_mi": 17.08,
+  "tier": "crew",
+  "closest_a": [
+   -82.05136,
+   33.5626
+  ],
+  "closest_b": [
+   -81.9953,
+   33.3198
+  ],
+  "isd_gap_days": 1978,
+  "construction_overlap_days": 0,
+  "a_conf": "low",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 7.0,
+  "rank": 65,
+  "id": "OVL-065"
+ },
+ {
+  "a": "DESC-15",
+  "b": "GA-21116",
+  "b_utility_code": "GPC",
+  "distance_km": 27.49,
+  "distance_mi": 17.08,
+  "tier": "crew",
+  "closest_a": [
+   -82.05136,
+   33.5626
+  ],
+  "closest_b": [
+   -81.9953,
+   33.3198
+  ],
+  "isd_gap_days": 1613,
+  "construction_overlap_days": 0,
+  "a_conf": "low",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 7.0,
+  "rank": 66,
+  "id": "OVL-066"
+ },
+ {
+  "a": "DESC-03",
+  "b": "GA-21023",
+  "b_utility_code": "GPC",
+  "distance_km": 31.01,
+  "distance_mi": 19.27,
+  "tier": "crew",
+  "closest_a": [
+   -81.08675,
+   32.3487
+  ],
+  "closest_b": [
+   -81.18872,
+   32.08351
+  ],
+  "isd_gap_days": 1613,
+  "construction_overlap_days": 0,
+  "a_conf": "high",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 6.7,
+  "rank": 67,
+  "id": "OVL-067"
+ },
+ {
+  "a": "DESC-10",
+  "b": "GA-20784",
+  "b_utility_code": "GPC",
+  "distance_km": 31.09,
+  "distance_mi": 19.32,
+  "tier": "crew",
+  "closest_a": [
+   -81.03249,
+   32.33376
+  ],
+  "closest_b": [
+   -81.22691,
+   32.10772
+  ],
+  "isd_gap_days": 2557,
+  "construction_overlap_days": 0,
+  "a_conf": "high",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 6.7,
+  "rank": 68,
+  "id": "OVL-068"
+ },
+ {
+  "a": "DESC-10",
+  "b": "GA-21023",
+  "b_utility_code": "GPC",
+  "distance_km": 31.34,
+  "distance_mi": 19.48,
+  "tier": "crew",
+  "closest_a": [
+   -81.00702,
+   32.31972
+  ],
+  "closest_b": [
+   -81.18872,
+   32.08351
+  ],
+  "isd_gap_days": 1461,
+  "construction_overlap_days": 0,
+  "a_conf": "high",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 6.5,
+  "rank": 69,
+  "id": "OVL-069"
+ },
+ {
+  "a": "DESC-10",
+  "b": "GA-21006",
+  "b_utility_code": "GPC",
+  "distance_km": 31.74,
+  "distance_mi": 19.72,
+  "tier": "crew",
+  "closest_a": [
+   -80.90218,
+   32.26192
+  ],
+  "closest_b": [
+   -81.08618,
+   32.02269
+  ],
+  "isd_gap_days": 1461,
+  "construction_overlap_days": 0,
+  "a_conf": "high",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 6.2,
+  "rank": 70,
+  "id": "OVL-070"
+ },
+ {
+  "a": "DESC-03",
+  "b": "GA-20796",
+  "b_utility_code": "GPC",
+  "distance_km": 32.24,
+  "distance_mi": 20.03,
+  "tier": "crew",
+  "closest_a": [
+   -81.1246,
+   32.35912
+  ],
+  "closest_b": [
+   -81.36838,
+   32.15528
+  ],
+  "isd_gap_days": 3074,
+  "construction_overlap_days": 0,
+  "a_conf": "high",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 5.8,
+  "rank": 71,
+  "id": "OVL-071"
+ },
+ {
+  "a": "DESC-23",
+  "b": "GA-20796",
+  "b_utility_code": "GPC",
+  "distance_km": 32.24,
+  "distance_mi": 20.03,
+  "tier": "crew",
+  "closest_a": [
+   -81.1246,
+   32.35912
+  ],
+  "closest_b": [
+   -81.36838,
+   32.15528
+  ],
+  "isd_gap_days": 2709,
+  "construction_overlap_days": 0,
+  "a_conf": "high",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 5.8,
+  "rank": 72,
+  "id": "OVL-072"
+ },
+ {
+  "a": "DESC-10",
+  "b": "GA-20407",
+  "b_utility_code": "GPC",
+  "distance_km": 31.49,
+  "distance_mi": 19.57,
+  "tier": "crew",
+  "closest_a": [
+   -80.90404,
+   32.26295
+  ],
+  "closest_b": [
+   -81.08658,
+   32.0256
+  ],
+  "isd_gap_days": 1096,
+  "construction_overlap_days": 0,
+  "a_conf": "high",
+  "b_conf": "low",
+  "parallel_km": 0.0,
+  "score": 5.6,
+  "rank": 73,
+  "id": "OVL-073"
+ },
+ {
+  "a": "DESC-31",
+  "b": "GA-14222",
+  "b_utility_code": "GPC",
+  "distance_km": 30.57,
+  "distance_mi": 19.0,
+  "tier": "crew",
+  "closest_a": [
+   -82.19593,
+   33.66013
+  ],
+  "closest_b": [
+   -82.41422,
+   33.45396
+  ],
+  "isd_gap_days": 3074,
+  "construction_overlap_days": 0,
+  "a_conf": "low",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 5.3,
+  "rank": 74,
+  "id": "OVL-074"
+ },
+ {
+  "a": "DESC-23",
+  "b": "GA-21006",
+  "b_utility_code": "GPC",
+  "distance_km": 34.19,
+  "distance_mi": 21.25,
+  "tier": "crew",
+  "closest_a": [
+   -81.03249,
+   32.33376
+  ],
+  "closest_b": [
+   -81.14446,
+   32.04123
+  ],
+  "isd_gap_days": 1248,
+  "construction_overlap_days": 0,
+  "a_conf": "high",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 4.8,
+  "rank": 75,
+  "id": "OVL-075"
+ },
+ {
+  "a": "DESC-03",
+  "b": "GA-21006",
+  "b_utility_code": "GPC",
+  "distance_km": 34.19,
+  "distance_mi": 21.25,
+  "tier": "crew",
+  "closest_a": [
+   -81.03249,
+   32.33376
+  ],
+  "closest_b": [
+   -81.14446,
+   32.04123
+  ],
+  "isd_gap_days": 1613,
+  "construction_overlap_days": 0,
+  "a_conf": "high",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 4.4,
+  "rank": 76,
+  "id": "OVL-076"
+ },
+ {
+  "a": "DESC-14",
+  "b": "GA-14222",
+  "b_utility_code": "GPC",
+  "distance_km": 32.64,
+  "distance_mi": 20.28,
+  "tier": "crew",
+  "closest_a": [
+   -82.16,
+   33.65708
+  ],
+  "closest_b": [
+   -82.41422,
+   33.45396
+  ],
+  "isd_gap_days": 3074,
+  "construction_overlap_days": 0,
+  "a_conf": "low",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 4.1,
+  "rank": 77,
+  "id": "OVL-077"
+ },
+ {
+  "a": "DESC-15",
+  "b": "GA-14222",
+  "b_utility_code": "GPC",
+  "distance_km": 32.64,
+  "distance_mi": 20.28,
+  "tier": "crew",
+  "closest_a": [
+   -82.16,
+   33.65708
+  ],
+  "closest_b": [
+   -82.41422,
+   33.45396
+  ],
+  "isd_gap_days": 2709,
+  "construction_overlap_days": 0,
+  "a_conf": "low",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 4.1,
+  "rank": 78,
+  "id": "OVL-078"
+ },
+ {
+  "a": "DESC-23",
+  "b": "GA-20407",
+  "b_utility_code": "GPC",
+  "distance_km": 34.64,
+  "distance_mi": 21.53,
+  "tier": "crew",
+  "closest_a": [
+   -81.03249,
+   32.33376
+  ],
+  "closest_b": [
+   -81.08658,
+   32.0256
+  ],
+  "isd_gap_days": 883,
+  "construction_overlap_days": 0,
+  "a_conf": "high",
+  "b_conf": "low",
+  "parallel_km": 0.0,
+  "score": 3.8,
+  "rank": 79,
+  "id": "OVL-079"
+ },
+ {
+  "a": "DESC-10",
+  "b": "GA-19523",
+  "b_utility_code": "GPC",
+  "distance_km": 37.31,
+  "distance_mi": 23.18,
+  "tier": "crew",
+  "closest_a": [
+   -81.03249,
+   32.33376
+  ],
+  "closest_b": [
+   -81.36838,
+   32.15528
+  ],
+  "isd_gap_days": 37,
+  "construction_overlap_days": 503,
+  "a_conf": "high",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 3.4,
+  "rank": 80,
+  "id": "OVL-080"
+ },
+ {
+  "a": "DESC-03",
+  "b": "GA-20407",
+  "b_utility_code": "GPC",
+  "distance_km": 34.64,
+  "distance_mi": 21.53,
+  "tier": "crew",
+  "closest_a": [
+   -81.03249,
+   32.33376
+  ],
+  "closest_b": [
+   -81.08658,
+   32.0256
+  ],
+  "isd_gap_days": 1248,
+  "construction_overlap_days": 0,
+  "a_conf": "high",
+  "b_conf": "low",
+  "parallel_km": 0.0,
+  "score": 3.3,
+  "rank": 81,
+  "id": "OVL-081"
+ },
+ {
+  "a": "DESC-10",
+  "b": "GA-20796",
+  "b_utility_code": "GPC",
+  "distance_km": 37.31,
+  "distance_mi": 23.18,
+  "tier": "crew",
+  "closest_a": [
+   -81.03249,
+   32.33376
+  ],
+  "closest_b": [
+   -81.36838,
+   32.15528
+  ],
+  "isd_gap_days": 2922,
+  "construction_overlap_days": 0,
+  "a_conf": "high",
+  "b_conf": "high",
+  "parallel_km": 0.0,
+  "score": 2.0,
+  "rank": 82,
+  "id": "OVL-082"
+ },
+ {
+  "a": "DESC-03",
+  "b": "GA-19966",
+  "b_utility_code": "GPC",
+  "distance_km": 38.75,
+  "distance_mi": 24.08,
+  "tier": "crew",
+  "closest_a": [
+   -81.1246,
+   32.35912
+  ],
+  "closest_b": [
+   -81.29,
+   32.04
+  ],
+  "isd_gap_days": 517,
+  "construction_overlap_days": 23,
+  "a_conf": "high",
+  "b_conf": "low",
+  "parallel_km": 0.0,
+  "score": 1.2,
+  "rank": 83,
+  "id": "OVL-083"
+ },
+ {
+  "a": "DESC-23",
+  "b": "GA-19966",
+  "b_utility_code": "GPC",
+  "distance_km": 38.75,
+  "distance_mi": 24.08,
+  "tier": "crew",
+  "closest_a": [
+   -81.1246,
+   32.35912
+  ],
+  "closest_b": [
+   -81.29,
+   32.04
+  ],
+  "isd_gap_days": 152,
+  "construction_overlap_days": 388,
+  "a_conf": "high",
+  "b_conf": "low",
+  "parallel_km": 0.0,
+  "score": 1.2,
+  "rank": 84,
+  "id": "OVL-084"
+ }
+]

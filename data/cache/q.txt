@@ -1,0 +1,5 @@
+[out:json][timeout:180];
+(
+  nwr["power"~"^(substation|plant)$"]["name"](30.3,-85.7,35.3,-78.4);
+);
+out center tags;

@@ -1,0 +1,1745 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-09-26T12:32:20Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "way",
+  "id": 9196726,
+  "center": {
+    "lat": 32.2173528,
+    "lon": -81.3219486
+  },
+  "tags": {
+    "cables": "3",
+    "circuits": "1",
+    "frequency": "60",
+    "name": "Blandford - Meldrim 230kV",
+    "power": "line",
+    "voltage": "230000"
+  }
+},
+{
+  "type": "way",
+  "id": 12087069,
+  "center": {
+    "lat": 33.1074754,
+    "lon": -81.4566480
+  },
+  "tags": {
+    "cables": "3",
+    "frequency": "60",
+    "name": "Urquhart - Fairfax 115kV",
+    "power": "line",
+    "source": "Bing",
+    "voltage": "115000"
+  }
+},
+{
+  "type": "way",
+  "id": 52102019,
+  "center": {
+    "lat": 33.6601273,
+    "lon": -82.1959307
+  },
+  "tags": {
+    "barrier": "fence",
+    "name": "Thurmond Substation",
+    "operator": "Georgia Power",
+    "operator:wikidata": "Q5547666",
+    "operator:wikipedia": "en:Georgia Power",
+    "power": "substation",
+    "substation": "generation",
+    "voltage": "115000"
+  }
+},
+{
+  "type": "way",
+  "id": 52102616,
+  "center": {
+    "lat": 33.5616178,
+    "lon": -82.0532936
+  },
+  "tags": {
+    "barrier": "fence",
+    "name": "Stevens Creek Dam Substation",
+    "power": "substation",
+    "substation": "transmission",
+    "voltage": "115000"
+  }
+},
+{
+  "type": "way",
+  "id": 121624363,
+  "center": {
+    "lat": 32.1552821,
+    "lon": -81.3683770
+  },
+  "tags": {
+    "barrier": "fence",
+    "frequency": "60",
+    "location": "outdoor",
+    "name": "Meldrim Substation",
+    "operator": "Georgia Power",
+    "operator:wikidata": "Q5547666",
+    "power": "substation",
+    "substation": "transmission",
+    "voltage": "230000;115000;46000"
+  }
+},
+{
+  "type": "way",
+  "id": 178951280,
+  "center": {
+    "lat": 33.9134867,
+    "lon": -81.5644353
+  },
+  "tags": {
+    "barrier": "fence",
+    "name": "Batesburg Substation",
+    "power": "substation",
+    "substation": "distribution",
+    "voltage": "115000"
+  }
+},
+{
+  "type": "way",
+  "id": 184867924,
+  "center": {
+    "lat": 33.0176985,
+    "lon": -79.9321678
+  },
+  "tags": {
+    "barrier": "fence",
+    "name": "Williams Substation",
+    "power": "substation",
+    "substation": "transmission",
+    "voltage": "230000;115000"
+  }
+},
+{
+  "type": "way",
+  "id": 184966103,
+  "center": {
+    "lat": 33.4234139,
+    "lon": -80.1252920
+  },
+  "tags": {
+    "barrier": "fence",
+    "name": "Santee Substation",
+    "operator": "Berkeley Electric Cooperative",
+    "power": "substation",
+    "substation": "distribution",
+    "voltage": "115000"
+  }
+},
+{
+  "type": "way",
+  "id": 185032900,
+  "center": {
+    "lat": 33.0640963,
+    "lon": -80.6205999
+  },
+  "tags": {
+    "barrier": "fence",
+    "name": "Canadys Substation",
+    "operator": "South Carolina Electric & Gas Company",
+    "power": "substation",
+    "substation": "transmission",
+    "voltage": "230000;115000"
+  }
+},
+{
+  "type": "way",
+  "id": 185039621,
+  "center": {
+    "lat": 34.2959982,
+    "lon": -81.3149243
+  },
+  "tags": {
+    "barrier": "fence",
+    "name": "Virgil C. Summer Nuclear #1 Substation",
+    "power": "substation",
+    "substation": "switching",
+    "voltage": "230000"
+  }
+},
+{
+  "type": "way",
+  "id": 185197506,
+  "center": {
+    "lat": 33.8721800,
+    "lon": -81.6977228
+  },
+  "tags": {
+    "barrier": "fence",
+    "name": "Ward Substation",
+    "power": "substation",
+    "substation": "transmission",
+    "voltage": "230000"
+  }
+},
+{
+  "type": "way",
+  "id": 185250129,
+  "center": {
+    "lat": 33.7284600,
+    "lon": -81.7501871
+  },
+  "tags": {
+    "cables": "3",
+    "frequency": "60",
+    "name": "Graniteville - Ward 230kV",
+    "power": "line",
+    "voltage": "230000"
+  }
+},
+{
+  "type": "way",
+  "id": 185317032,
+  "center": {
+    "lat": 32.6974259,
+    "lon": -80.8637929
+  },
+  "tags": {
+    "barrier": "fence",
+    "name": "Yemassee Substation",
+    "operator": "South Carolina Electric & Gas Company",
+    "power": "substation",
+    "substation": "transmission",
+    "voltage": "230000"
+  }
+},
+{
+  "type": "way",
+  "id": 185317033,
+  "center": {
+    "lat": 32.8893197,
+    "lon": -80.7401642
+  },
+  "tags": {
+    "cables": "3",
+    "frequency": "60",
+    "name": "Canadys - Yemassee 230kV",
+    "operator": "South Carolina Electric & Gas Company",
+    "power": "line",
+    "voltage": "230000"
+  }
+},
+{
+  "type": "way",
+  "id": 185330726,
+  "center": {
+    "lat": 32.8303196,
+    "lon": -80.0702792
+  },
+  "tags": {
+    "barrier": "fence",
+    "name": "Church Creek Substation",
+    "power": "substation",
+    "substation": "transmission",
+    "voltage": "230000;115000"
+  }
+},
+{
+  "type": "way",
+  "id": 185362031,
+  "center": {
+    "lat": 32.5673233,
+    "lon": -80.7957631
+  },
+  "tags": {
+    "cables": "3",
+    "frequency": "60",
+    "name": "Yemassee - Burton 230kV",
+    "operator": "South Carolina Electric & Gas Company",
+    "power": "line",
+    "voltage": "230000"
+  }
+},
+{
+  "type": "way",
+  "id": 185380597,
+  "center": {
+    "lat": 32.3606993,
+    "lon": -81.1241523
+  },
+  "tags": {
+    "barrier": "fence",
+    "name": "Jasper Substation",
+    "power": "substation",
+    "substation": "generation",
+    "voltage": "230000"
+  }
+},
+{
+  "type": "way",
+  "id": 185397980,
+  "center": {
+    "lat": 32.7224594,
+    "lon": -80.8684368
+  },
+  "tags": {
+    "cables": "6",
+    "circuits": "2",
+    "frequency": "60",
+    "name": "Fairfax - Yemassee 115kV",
+    "power": "line",
+    "voltage": "230000;115000"
+  }
+},
+{
+  "type": "way",
+  "id": 185577972,
+  "center": {
+    "lat": 33.4634826,
+    "lon": -80.7820145
+  },
+  "tags": {
+    "cables": "3",
+    "frequency": "60",
+    "name": "Orangeburg East - St. George 115kV #1",
+    "power": "line",
+    "voltage": "115000"
+  }
+},
+{
+  "type": "way",
+  "id": 185577973,
+  "center": {
+    "lat": 33.4826895,
+    "lon": -80.7945470
+  },
+  "tags": {
+    "cables": "6",
+    "frequency": "60",
+    "name": "Orangeburg East - St. George 115kV #1",
+    "power": "line",
+    "voltage": "230000;115000"
+  }
+},
+{
+  "type": "way",
+  "id": 185577985,
+  "center": {
+    "lat": 33.0725456,
+    "lon": -80.7109856
+  },
+  "tags": {
+    "cables": "6",
+    "frequency": "60",
+    "name": "Canadys - Fairfax 115kV",
+    "power": "line",
+    "voltage": "230000;115000"
+  }
+},
+{
+  "type": "way",
+  "id": 186511170,
+  "center": {
+    "lat": 33.4813504,
+    "lon": -81.7901480
+  },
+  "tags": {
+    "cables": "3",
+    "frequency": "60",
+    "name": "Uruquart - Toolebeck 115kV",
+    "power": "line",
+    "voltage": "115000"
+  }
+},
+{
+  "type": "way",
+  "id": 186840913,
+  "center": {
+    "lat": 34.0534342,
+    "lon": -81.2168339
+  },
+  "tags": {
+    "addr:city": "Columbia",
+    "addr:housenumber": "6065",
+    "addr:postcode": "29212",
+    "addr:state": "SC",
+    "addr:street": "Bush River Road",
+    "building": "yes",
+    "ele": "59",
+    "gnis:feature_id": "1244369",
+    "landuse": "industrial",
+    "layer": "1",
+    "name": "Saluda Hydroelectric Plant",
+    "operator": "Dominion Energy South Carolina",
+    "operator:wikidata": "Q114367619",
+    "plant:method": "water-storage",
+    "plant:output:electricity": "207.3 MW",
+    "plant:source": "hydro",
+    "power": "plant",
+    "ref:US:EIA": "3293",
+    "start_date": "1930-08",
+    "wikidata": "Q7406279"
+  }
+},
+{
+  "type": "way",
+  "id": 206005320,
+  "center": {
+    "lat": 34.3346578,
+    "lon": -80.7023194
+  },
+  "tags": {
+    "barrier": "fence",
+    "name": "Wateree Dam Substation",
+    "power": "substation",
+    "substation": "transmission",
+    "voltage": "115000"
+  }
+},
+{
+  "type": "way",
+  "id": 206005876,
+  "center": {
+    "lat": 34.3355707,
+    "lon": -80.7022325
+  },
+  "tags": {
+    "addr:city": "Ridgeway",
+    "addr:housenumber": "1790",
+    "addr:postcode": "29130",
+    "addr:state": "SC",
+    "addr:street": "Wateree Dam Road",
+    "building": "yes",
+    "layer": "1",
+    "name": "Wateree Dam Hydro",
+    "operator": "Duke Energy",
+    "operator:wikidata": "Q1264404",
+    "plant:method": "water-storage",
+    "plant:output:electricity": "90.5 MW",
+    "plant:source": "hydro",
+    "power": "plant",
+    "ref:US:EIA": "3270",
+    "source": "U.S. Energy Information Administration - EIA-860 - 2020",
+    "start_date": "1919-10",
+    "wikidata": "Q65209174"
+  }
+},
+{
+  "type": "way",
+  "id": 290264139,
+  "center": {
+    "lat": 32.7227934,
+    "lon": -79.9673323
+  },
+  "tags": {
+    "barrier": "fence",
+    "name": "Queensborough Substation",
+    "power": "substation",
+    "substation": "distribution",
+    "voltage": "115000"
+  }
+},
+{
+  "type": "way",
+  "id": 318318141,
+  "center": {
+    "lat": 33.5636663,
+    "lon": -80.7089959
+  },
+  "tags": {
+    "barrier": "fence",
+    "name": "Cameron Substation",
+    "power": "substation",
+    "substation": "distribution",
+    "voltage": "46000"
+  }
+},
+{
+  "type": "way",
+  "id": 359445492,
+  "center": {
+    "lat": 34.2986182,
+    "lon": -81.3150032
+  },
+  "tags": {
+    "generator:method": "fission",
+    "generator:output:electricity": "1029.6 MW",
+    "generator:source": "nuclear",
+    "name": "Virgil C. Summer Nuclear Generating Station Unit 1",
+    "operator": "SCE&G",
+    "power": "generator",
+    "start_date": "1984-01-01"
+  }
+},
+{
+  "type": "way",
+  "id": 359445493,
+  "center": {
+    "lat": 34.2959838,
+    "lon": -81.3145493
+  },
+  "tags": {
+    "addr:city": "Jenkinsville",
+    "addr:postcode": "29065",
+    "addr:state": "SC",
+    "landuse": "industrial",
+    "name": "Virgil C. Summer Nuclear Generating Station",
+    "operator": "SCE&G",
+    "plant:method": "fission",
+    "plant:output:electricity": "1029.6 MW",
+    "plant:source": "nuclear",
+    "power": "plant",
+    "ref:US:EIA": "6127",
+    "start_date": "1984-01-01",
+    "wikidata": "Q1557235",
+    "wikipedia": "en:Virgil C. Summer Nuclear Generating Station"
+  }
+},
+{
+  "type": "way",
+  "id": 380817883,
+  "center": {
+    "lat": 33.3650872,
+    "lon": -81.8168644
+  },
+  "tags": {
+    "cables": "3",
+    "frequency": "60",
+    "name": "Urquhart - Fairfax 115kV",
+    "power": "line",
+    "voltage": "115000"
+  }
+},
+{
+  "type": "way",
+  "id": 380856940,
+  "center": {
+    "lat": 33.2069113,
+    "lon": -81.6059164
+  },
+  "tags": {
+    "cables": "3",
+    "frequency": "60",
+    "name": "Urquhart - Fairfax 115kV",
+    "power": "line",
+    "source": "Bing",
+    "voltage": "115000"
+  }
+},
+{
+  "type": "way",
+  "id": 385652028,
+  "center": {
+    "lat": 33.5635794,
+    "lon": -82.0460910
+  },
+  "tags": {
+    "cables": "3",
+    "circuits": "1",
+    "name": "Ward - Stevens Creek 115kV",
+    "power": "line",
+    "voltage": "115000"
+  }
+},
+{
+  "type": "way",
+  "id": 449466227,
+  "center": {
+    "lat": 32.3591202,
+    "lon": -81.1245996
+  },
+  "tags": {
+    "barrier": "fence",
+    "landuse": "industrial",
+    "name": "Jasper Generating Plant",
+    "operator": "Dominion Energy South Carolina",
+    "plant:method": "combustion",
+    "plant:output:electricity": "924 MW",
+    "plant:source": "gas",
+    "plant:type": "combined_cycle",
+    "power": "plant",
+    "ref:US:EIA": "55927",
+    "source": "U.S. Energy Information Administration - EIA-860 - 2019",
+    "start_date": "2004-05",
+    "wikidata": "Q19376131"
+  }
+},
+{
+  "type": "way",
+  "id": 449466234,
+  "center": {
+    "lat": 33.4333777,
+    "lon": -81.9092090
+  },
+  "tags": {
+    "addr:city": "Beech Island",
+    "addr:housenumber": "100",
+    "addr:postcode": "29842",
+    "addr:state": "SC",
+    "addr:street": "Keith Mullins Drive",
+    "barrier": "fence",
+    "landuse": "industrial",
+    "name": "Urquhart Station",
+    "operator": "Dominion Energy South Carolina, Inc",
+    "plant:method": "combustion",
+    "plant:output:electricity": "758.9 MW",
+    "plant:source": "gas",
+    "power": "plant",
+    "ref:US:EIA": "3295",
+    "source": "U.S. Energy Information Administration - EIA-860 - 2021",
+    "start_date": "1953-12",
+    "wikidata": "Q19393991"
+  }
+},
+{
+  "type": "way",
+  "id": 490188635,
+  "center": {
+    "lat": 32.7233566,
+    "lon": -79.9733901
+  },
+  "tags": {
+    "barrier": "fence",
+    "name": "Queensborough Switching Station",
+    "operator": "Santee Cooper",
+    "power": "substation",
+    "substation": "switching",
+    "voltage": "115000"
+  }
+},
+{
+  "type": "way",
+  "id": 497970794,
+  "center": {
+    "lat": 32.9873703,
+    "lon": -80.2208317
+  },
+  "tags": {
+    "barrier": "fence",
+    "name": "Summerville Wastewater Treatment Substation",
+    "power": "substation",
+    "substation": "industrial",
+    "voltage": "115000"
+  }
+},
+{
+  "type": "way",
+  "id": 498828318,
+  "center": {
+    "lat": 33.0383462,
+    "lon": -81.0160630
+  },
+  "tags": {
+    "cables": "3",
+    "frequency": "60",
+    "name": "Canadys - Fairfax 115kV",
+    "power": "line",
+    "voltage": "115000"
+  }
+},
+{
+  "type": "way",
+  "id": 498967268,
+  "center": {
+    "lat": 32.2350272,
+    "lon": -80.8533836
+  },
+  "tags": {
+    "barrier": "fence",
+    "name": "Bluffton Substation",
+    "operator": "South Carolina Electric & Gas",
+    "power": "substation",
+    "substation": "distribution",
+    "voltage": "115000"
+  }
+},
+{
+  "type": "way",
+  "id": 498973994,
+  "center": {
+    "lat": 32.4565812,
+    "lon": -80.7389409
+  },
+  "tags": {
+    "cables": "6",
+    "circuits": "2",
+    "frequency": "60",
+    "name": "Burton - Yemassee 115kV",
+    "power": "line",
+    "voltage": "115000"
+  }
+},
+{
+  "type": "way",
+  "id": 498973997,
+  "center": {
+    "lat": 32.5865834,
+    "lon": -80.8135068
+  },
+  "tags": {
+    "cables": "6",
+    "circuits": "2",
+    "frequency": "60",
+    "name": "Burton - Yemassee 115kV",
+    "power": "line",
+    "voltage": "115000"
+  }
+},
+{
+  "type": "way",
+  "id": 499284833,
+  "center": {
+    "lat": 32.8133932,
+    "lon": -80.9910933
+  },
+  "tags": {
+    "cables": "3",
+    "frequency": "60",
+    "name": "Fairfax - Yemassee 115kV",
+    "power": "line",
+    "voltage": "115000"
+  }
+},
+{
+  "type": "way",
+  "id": 499284845,
+  "center": {
+    "lat": 32.7072918,
+    "lon": -80.8598928
+  },
+  "tags": {
+    "cables": "3",
+    "frequency": "60",
+    "name": "Fairfax - Yemassee 115kV",
+    "power": "line",
+    "voltage": "115000"
+  }
+},
+{
+  "type": "way",
+  "id": 499420034,
+  "center": {
+    "lat": 33.0390538,
+    "lon": -81.3284055
+  },
+  "tags": {
+    "cables": "3",
+    "frequency": "60",
+    "name": "Urquhart - Fairfax 115kV",
+    "power": "line",
+    "voltage": "115000"
+  }
+},
+{
+  "type": "way",
+  "id": 499420035,
+  "center": {
+    "lat": 32.9438659,
+    "lon": -81.1702206
+  },
+  "tags": {
+    "cables": "3",
+    "frequency": "60",
+    "name": "Fairfax - Yemassee 115kV",
+    "power": "line",
+    "voltage": "115000"
+  }
+},
+{
+  "type": "way",
+  "id": 499576288,
+  "center": {
+    "lat": 33.6590214,
+    "lon": -81.9595163
+  },
+  "tags": {
+    "cables": "3",
+    "frequency": "60",
+    "name": "Ward - Stevens Creek 115kV",
+    "power": "line",
+    "voltage": "115000"
+  }
+},
+{
+  "type": "way",
+  "id": 499577246,
+  "center": {
+    "lat": 33.8728553,
+    "lon": -81.6984313
+  },
+  "tags": {
+    "cables": "3",
+    "frequency": "60",
+    "name": "Ward - Stevens Creek 115kV",
+    "power": "line",
+    "voltage": "115000"
+  }
+},
+{
+  "type": "way",
+  "id": 499577248,
+  "center": {
+    "lat": 33.8417847,
+    "lon": -81.7693293
+  },
+  "tags": {
+    "cables": "3",
+    "frequency": "60",
+    "name": "Ward - Stevens Creek 115kV",
+    "power": "line",
+    "voltage": "115000"
+  }
+},
+{
+  "type": "way",
+  "id": 499577249,
+  "center": {
+    "lat": 33.7805409,
+    "lon": -81.8599904
+  },
+  "tags": {
+    "cables": "3",
+    "frequency": "60",
+    "name": "Ward - Stevens Creek 115kV",
+    "power": "line",
+    "voltage": "115000"
+  }
+},
+{
+  "type": "way",
+  "id": 499649724,
+  "center": {
+    "lat": 33.8934466,
+    "lon": -81.6317265
+  },
+  "tags": {
+    "cables": "3",
+    "frequency": "60",
+    "name": "Batesburg - Ward 115kV",
+    "power": "line",
+    "voltage": "115000"
+  }
+},
+{
+  "type": "way",
+  "id": 499649725,
+  "center": {
+    "lat": 33.8729209,
+    "lon": -81.6982020
+  },
+  "tags": {
+    "cables": "3",
+    "frequency": "60",
+    "name": "Batesburg - Ward 115kV",
+    "power": "line",
+    "voltage": "115000"
+  }
+},
+{
+  "type": "way",
+  "id": 552845047,
+  "center": {
+    "lat": 34.2903782,
+    "lon": -81.3286149
+  },
+  "tags": {
+    "barrier": "fence",
+    "name": "Virgil C. Summer Nuclear #2/3 Switching Station",
+    "power": "substation",
+    "substation": "switching",
+    "voltage": "230000"
+  }
+},
+{
+  "type": "way",
+  "id": 637699272,
+  "center": {
+    "lat": 35.0491473,
+    "lon": -78.8864018
+  },
+  "tags": {
+    "barrier": "fence",
+    "name": "Williams Street Substation",
+    "operator": "Fayetteville Public Works",
+    "power": "substation",
+    "substation": "distribution",
+    "voltage": "66000"
+  }
+},
+{
+  "type": "way",
+  "id": 660617934,
+  "center": {
+    "lat": 32.0429578,
+    "lon": -81.3000239
+  },
+  "tags": {
+    "cables": "6",
+    "circuits": "2",
+    "frequency": "60",
+    "name": "Meldrim - Little Ogeechee 230kV",
+    "operator": "Georgia Power",
+    "operator:wikidata": "Q5547666",
+    "power": "line",
+    "voltage": "230000"
+  }
+},
+{
+  "type": "way",
+  "id": 873318378,
+  "center": {
+    "lat": 34.7393853,
+    "lon": -79.4626563
+  },
+  "tags": {
+    "barrier": "fence",
+    "name": "Eastover Solar Farm",
+    "operator": "Eastover Farm, LLC",
+    "plant:method": "photovoltaic",
+    "plant:output:electricity": "5 MW",
+    "plant:source": "solar",
+    "power": "plant",
+    "ref:US:EIA": "59562",
+    "start_date": "2014-08"
+  }
+},
+{
+  "type": "way",
+  "id": 917253712,
+  "center": {
+    "lat": 32.6118920,
+    "lon": -81.1503133
+  },
+  "tags": {
+    "barrier": "fence",
+    "name": "Pineland Substation",
+    "power": "substation",
+    "substation": "distribution",
+    "voltage": "69000"
+  }
+},
+{
+  "type": "way",
+  "id": 993540535,
+  "center": {
+    "lat": 33.6501119,
+    "lon": -81.3605659
+  },
+  "tags": {
+    "barrier": "fence",
+    "name": "Wagener Substation",
+    "operator": "South Carolina Gas & Electric",
+    "power": "substation",
+    "substation": "distribution",
+    "voltage": "46000"
+  }
+},
+{
+  "type": "way",
+  "id": 1015932052,
+  "center": {
+    "lat": 32.1779461,
+    "lon": -81.3252555
+  },
+  "tags": {
+    "cables": "3",
+    "circuits": "1",
+    "name": "115kV Meldrim - South Effigham",
+    "power": "line",
+    "voltage": "115000"
+  }
+},
+{
+  "type": "way",
+  "id": 1031967120,
+  "center": {
+    "lat": 34.0102219,
+    "lon": -81.7388966
+  },
+  "tags": {
+    "name": "Saluda Solar II",
+    "operator": "Saluda Solar II, LLC",
+    "plant:method": "photovoltaic",
+    "plant:output:electricity": "3.4 MW",
+    "plant:source": "solar",
+    "power": "plant",
+    "ref:US:EIA": "61323",
+    "start_date": "2017"
+  }
+},
+{
+  "type": "way",
+  "id": 1032475758,
+  "center": {
+    "lat": 33.9688083,
+    "lon": -81.7833212
+  },
+  "tags": {
+    "name": "Saluda Solar, LLC",
+    "operator": "Cypress Creek Renewables",
+    "plant:method": "photovoltaic",
+    "plant:output:electricity": "6.8 MW",
+    "plant:source": "solar",
+    "power": "plant",
+    "ref:US:EIA": "60535",
+    "start_date": "2016"
+  }
+},
+{
+  "type": "way",
+  "id": 1037171328,
+  "center": {
+    "lat": 33.8864947,
+    "lon": -80.6403556
+  },
+  "tags": {
+    "landuse": "industrial",
+    "name": "Sylvamo Eastover Facility Cogeneration",
+    "operator": "Sylvamo",
+    "plant:method": "combustion",
+    "plant:output:electricity": "109.6 MW",
+    "plant:source": "biomass",
+    "power": "plant",
+    "ref:US:EIA": "52151"
+  }
+},
+{
+  "type": "way",
+  "id": 1041743427,
+  "center": {
+    "lat": 33.9973145,
+    "lon": -81.7662190
+  },
+  "tags": {
+    "barrier": "fence",
+    "name": "Saluda Substation",
+    "power": "substation",
+    "substation": "distribution",
+    "voltage": "115000"
+  }
+},
+{
+  "type": "way",
+  "id": 1042037357,
+  "center": {
+    "lat": 33.6611568,
+    "lon": -82.1977268
+  },
+  "tags": {
+    "landuse": "industrial",
+    "name": "J Strom Thurmond Dam",
+    "operator": "U.S. Corps of Engineers",
+    "plant:method": "water-storage",
+    "plant:output:electricity": "361.9 MW",
+    "plant:source": "hydro",
+    "power": "plant",
+    "ref:US:EIA": "3323",
+    "source": "U.S. Energy Information Administration - EIA-860 - 2020",
+    "start_date": "1953-01",
+    "wikidata": "Q6107150",
+    "wikipedia": "en:J. Strom Thurmond Dam"
+  }
+},
+{
+  "type": "way",
+  "id": 1064802545,
+  "center": {
+    "lat": 32.3991323,
+    "lon": -80.5711266
+  },
+  "tags": {
+    "barrier": "fence",
+    "name": "Frogmore Substation",
+    "operator": "South Carolina Electric & Gas",
+    "power": "substation",
+    "substation": "distribution",
+    "voltage": "115000;23000"
+  }
+},
+{
+  "type": "way",
+  "id": 1065670067,
+  "center": {
+    "lat": 33.0149206,
+    "lon": -79.9304530
+  },
+  "tags": {
+    "name": "Williams Gas Turbine Substation",
+    "operator": "South Carolina Gas & Electric",
+    "power": "substation",
+    "substation": "generation",
+    "voltage": "115000;13200"
+  }
+},
+{
+  "type": "way",
+  "id": 1067804789,
+  "center": {
+    "lat": 35.2480519,
+    "lon": -82.3474788
+  },
+  "tags": {
+    "barrier": "fence",
+    "name": "Saluda Retail Substation",
+    "operator": "Duke Energy",
+    "operator:wikidata": "Q1264404",
+    "power": "substation",
+    "substation": "distribution",
+    "voltage": "44000;6900"
+  }
+},
+{
+  "type": "way",
+  "id": 1069480257,
+  "center": {
+    "lat": 33.1993880,
+    "lon": -80.5920086
+  },
+  "tags": {
+    "barrier": "fence",
+    "name": "Saint George Switching Station",
+    "power": "substation",
+    "substation": "switching",
+    "voltage": "230000"
+  }
+},
+{
+  "type": "way",
+  "id": 1069480271,
+  "center": {
+    "lat": 33.1982716,
+    "lon": -80.5921824
+  },
+  "tags": {
+    "name": "Orangeburg East - St. George 115kV #1",
+    "power": "line",
+    "voltage": "115000"
+  }
+},
+{
+  "type": "way",
+  "id": 1069480272,
+  "center": {
+    "lat": 33.1983032,
+    "lon": -80.5921253
+  },
+  "tags": {
+    "name": "Orangeburg East - St. George 115kV #2",
+    "power": "line",
+    "voltage": "115000"
+  }
+},
+{
+  "type": "way",
+  "id": 1069480273,
+  "center": {
+    "lat": 33.3327081,
+    "lon": -80.6882122
+  },
+  "tags": {
+    "circuits": "2",
+    "name": "Orangeburg East - St. George 115kV #1;2",
+    "power": "line",
+    "voltage": "115000"
+  }
+},
+{
+  "type": "way",
+  "id": 1073259463,
+  "center": {
+    "lat": 33.4847488,
+    "lon": -81.7391152
+  },
+  "tags": {
+    "name": "Toolebeck - South Augusta 230kV",
+    "power": "line",
+    "voltage": "230000"
+  }
+},
+{
+  "type": "way",
+  "id": 1073259465,
+  "center": {
+    "lat": 33.5369021,
+    "lon": -81.6667602
+  },
+  "tags": {
+    "name": "Toolebeck - Aiken 230kV",
+    "power": "line",
+    "voltage": "230000"
+  }
+},
+{
+  "type": "way",
+  "id": 1073259467,
+  "center": {
+    "lat": 33.5346321,
+    "lon": -81.6693272
+  },
+  "tags": {
+    "barrier": "fence",
+    "name": "Toolebeck Substation",
+    "power": "substation",
+    "start_date": "2022",
+    "substation": "transmission",
+    "voltage": "230000;115000"
+  }
+},
+{
+  "type": "way",
+  "id": 1073259469,
+  "center": {
+    "lat": 33.5409177,
+    "lon": -81.6606640
+  },
+  "tags": {
+    "name": "Toolebeck - Aiken 230kV",
+    "power": "line",
+    "voltage": "230000"
+  }
+},
+{
+  "type": "way",
+  "id": 1073259484,
+  "center": {
+    "lat": 33.5712262,
+    "lon": -81.6161869
+  },
+  "tags": {
+    "cables": "6",
+    "frequency": "60",
+    "name": "Toolebeck - Aiken 230kV",
+    "power": "line",
+    "voltage": "230000;115000"
+  }
+},
+{
+  "type": "way",
+  "id": 1075474123,
+  "center": {
+    "lat": 33.0626255,
+    "lon": -80.6221531
+  },
+  "tags": {
+    "name": "Canadys - Fairfax 115kV",
+    "power": "line",
+    "voltage": "115000"
+  }
+},
+{
+  "type": "way",
+  "id": 1075509549,
+  "center": {
+    "lat": 33.5323844,
+    "lon": -80.5797245
+  },
+  "tags": {
+    "barrier": "fence",
+    "name": "Elloree Substation",
+    "power": "substation",
+    "substation": "distribution",
+    "voltage": "46000"
+  }
+},
+{
+  "type": "way",
+  "id": 1075548812,
+  "center": {
+    "lat": 33.5017867,
+    "lon": -80.8069908
+  },
+  "tags": {
+    "name": "Orangeburg East - St. George 115kV #1",
+    "power": "line",
+    "voltage": "115000"
+  }
+},
+{
+  "type": "way",
+  "id": 1075642547,
+  "center": {
+    "lat": 33.4825519,
+    "lon": -80.7943455
+  },
+  "tags": {
+    "name": "Orangeburg East - St. George 115kV #2",
+    "power": "line",
+    "voltage": "115000"
+  }
+},
+{
+  "type": "way",
+  "id": 1075801516,
+  "center": {
+    "lat": 33.1416593,
+    "lon": -80.7038209
+  },
+  "tags": {
+    "name": "St. George - Smoaks 46kV",
+    "power": "line",
+    "voltage": "46000"
+  }
+},
+{
+  "type": "way",
+  "id": 1076980535,
+  "center": {
+    "lat": 33.8929073,
+    "lon": -81.6316079
+  },
+  "tags": {
+    "name": "Batesburg - Ward 46kV",
+    "power": "line",
+    "voltage": "46000"
+  }
+},
+{
+  "type": "way",
+  "id": 1077428673,
+  "center": {
+    "lat": 33.5729369,
+    "lon": -80.7113660
+  },
+  "tags": {
+    "barrier": "fence",
+    "name": "Cameron Solar Substation",
+    "power": "substation",
+    "substation": "generation",
+    "voltage": "46000"
+  }
+},
+{
+  "type": "way",
+  "id": 1077428676,
+  "center": {
+    "lat": 33.5676890,
+    "lon": -80.6978118
+  },
+  "tags": {
+    "barrier": "fence",
+    "name": "Cameron Solar II",
+    "operator": "Cameron Solar II, LLC",
+    "plant:method": "photovoltaic",
+    "plant:output:electricity": "4.1 MW",
+    "plant:source": "solar",
+    "power": "plant",
+    "ref:US:EIA": "61326",
+    "start_date": "2017"
+  }
+},
+{
+  "type": "way",
+  "id": 1082130490,
+  "center": {
+    "lat": 33.8262718,
+    "lon": -80.6240763
+  },
+  "tags": {
+    "barrier": "fence",
+    "name": "Wateree Substation",
+    "power": "substation",
+    "substation": "transmission",
+    "voltage": "230000"
+  }
+},
+{
+  "type": "way",
+  "id": 1088635944,
+  "center": {
+    "lat": 33.5625993,
+    "lon": -82.0513618
+  },
+  "tags": {
+    "name": "Stevens Creek Power Plant",
+    "operator": "Dominion Energy South Carolina, Inc",
+    "plant:output:electricity": "17.6 MW",
+    "plant:source": "hydro",
+    "power": "plant",
+    "ref:US:EIA": "736",
+    "source": "U.S. Energy Information Administration - EIA-860 - 2021",
+    "start_date": "1914-06"
+  }
+},
+{
+  "type": "way",
+  "id": 1091376827,
+  "center": {
+    "lat": 32.7087332,
+    "lon": -80.9105245
+  },
+  "tags": {
+    "name": "Yemassee Solar",
+    "operator": "Dominion Renewable Energy",
+    "plant:method": "photovoltaic",
+    "plant:output:electricity": "10 MW",
+    "plant:source": "solar",
+    "power": "plant",
+    "ref:US:EIA": "62353",
+    "source": "U.S. Energy Information Administration - EIA-860 - 2022",
+    "start_date": "2020-12"
+  }
+},
+{
+  "type": "way",
+  "id": 1092445062,
+  "center": {
+    "lat": 35.0144929,
+    "lon": -79.1557681
+  },
+  "tags": {
+    "barrier": "fence",
+    "name": "Williams Sawmill Substation",
+    "operator": "Lumbee River EMC",
+    "power": "substation",
+    "substation": "distribution",
+    "voltage": "115000"
+  }
+},
+{
+  "type": "way",
+  "id": 1270921047,
+  "center": {
+    "lat": 33.9202036,
+    "lon": -80.6536372
+  },
+  "tags": {
+    "barrier": "fence",
+    "name": "Eastover Solar",
+    "operator": "Eastover Solar, LLC",
+    "plant:method": "photovoltaic",
+    "plant:output:electricity": "73.6 MW",
+    "plant:source": "solar;battery",
+    "power": "plant",
+    "ref:US:EIA": "66717",
+    "start_date": "2023-03"
+  }
+},
+{
+  "type": "way",
+  "id": 1317440404,
+  "center": {
+    "lat": 33.9860798,
+    "lon": -81.0057190
+  },
+  "tags": {
+    "addr:city": "Columbia",
+    "addr:housenumber": "423",
+    "addr:postcode": "29205",
+    "addr:state": "SC",
+    "addr:street": "Howard Street",
+    "name": "Howard Street",
+    "operator": "Dominion Energy South Carolina",
+    "operator:wikidata": "Q114367619",
+    "power": "substation",
+    "ref": "1102"
+  }
+},
+{
+  "type": "way",
+  "id": 1458221220,
+  "center": {
+    "lat": 32.1666218,
+    "lon": -81.4609318
+  },
+  "tags": {
+    "barrier": "fence",
+    "name": "Hyundai Motors Substation",
+    "power": "substation",
+    "start_date": "2025",
+    "substation": "industrial",
+    "voltage": "230000"
+  }
+},
+{
+  "type": "way",
+  "id": 1489153808,
+  "center": {
+    "lat": 32.1378867,
+    "lon": -81.4319182
+  },
+  "tags": {
+    "cables": "3",
+    "circuits": "1",
+    "name": "Newton Road - Hyundai Motors (South Loop)",
+    "operator": "Georgia Power",
+    "operator:wikidata": "Q5547666",
+    "power": "line",
+    "start_date": "2025",
+    "voltage": "230000",
+    "wires": "single"
+  }
+},
+{
+  "type": "way",
+  "id": 1489153811,
+  "center": {
+    "lat": 32.1350752,
+    "lon": -81.3669862
+  },
+  "tags": {
+    "cables": "6",
+    "circuits": "2",
+    "frequency": "60",
+    "name": "Meldrim - Little Ogeechee 230kV",
+    "operator": "Georgia Power",
+    "operator:wikidata": "Q5547666",
+    "power": "line",
+    "voltage": "230000"
+  }
+},
+{
+  "type": "way",
+  "id": 1489153823,
+  "center": {
+    "lat": 32.1758758,
+    "lon": -81.4249350
+  },
+  "tags": {
+    "cables": "3",
+    "circuits": "1",
+    "name": "Hyundai Motors - Meldrim (North Loop)",
+    "operator": "Georgia Power",
+    "operator:wikidata": "Q5547666",
+    "power": "line",
+    "start_date": "2025",
+    "voltage": "230000",
+    "wires": "single"
+  }
+},
+{
+  "type": "way",
+  "id": 1489153826,
+  "center": {
+    "lat": 32.1099293,
+    "lon": -81.3707270
+  },
+  "tags": {
+    "cables": "3",
+    "circuits": "1",
+    "frequency": "60",
+    "name": "Meldrim - Little Ogeechee 230kV",
+    "operator": "Georgia Power",
+    "operator:wikidata": "Q5547666",
+    "power": "line",
+    "start_date": "2025",
+    "voltage": "230000"
+  }
+},
+{
+  "type": "way",
+  "id": 1489153827,
+  "center": {
+    "lat": 32.1100434,
+    "lon": -81.3706298
+  },
+  "tags": {
+    "cables": "3",
+    "circuits": "1",
+    "frequency": "60",
+    "name": "Meldrim - Little Ogeechee 230kV",
+    "operator": "Georgia Power",
+    "operator:wikidata": "Q5547666",
+    "power": "line",
+    "start_date": "2025",
+    "voltage": "230000"
+  }
+},
+{
+  "type": "way",
+  "id": 1489153828,
+  "center": {
+    "lat": 32.1137379,
+    "lon": -81.3707852
+  },
+  "tags": {
+    "cables": "3",
+    "circuits": "1",
+    "frequency": "60",
+    "name": "Meldrim - Little Ogeechee 230kV",
+    "operator": "Georgia Power",
+    "operator:wikidata": "Q5547666",
+    "power": "line",
+    "start_date": "2025",
+    "voltage": "230000"
+  }
+},
+{
+  "type": "way",
+  "id": 1489153829,
+  "center": {
+    "lat": 32.1136320,
+    "lon": -81.3705456
+  },
+  "tags": {
+    "cables": "3",
+    "circuits": "1",
+    "frequency": "60",
+    "name": "Meldrim - Little Ogeechee 230kV",
+    "operator": "Georgia Power",
+    "operator:wikidata": "Q5547666",
+    "power": "line",
+    "start_date": "2025",
+    "voltage": "230000"
+  }
+},
+{
+  "type": "way",
+  "id": 1489153848,
+  "center": {
+    "lat": 32.0952042,
+    "lon": -81.3601193
+  },
+  "tags": {
+    "cables": "6",
+    "circuits": "2",
+    "frequency": "60",
+    "name": "Meldrim - Little Ogeechee 230kV",
+    "operator": "Georgia Power",
+    "operator:wikidata": "Q5547666",
+    "power": "line",
+    "voltage": "230000"
+  }
+},
+{
+  "type": "way",
+  "id": 1489153850,
+  "center": {
+    "lat": 32.0809397,
+    "lon": -81.3482997
+  },
+  "tags": {
+    "cables": "3",
+    "circuits": "1",
+    "frequency": "60",
+    "name": "Meldrim - Little Ogeechee 230kV",
+    "operator": "Georgia Power",
+    "operator:wikidata": "Q5547666",
+    "power": "line",
+    "voltage": "230000"
+  }
+},
+{
+  "type": "way",
+  "id": 1489153851,
+  "center": {
+    "lat": 32.0800721,
+    "lon": -81.3476483
+  },
+  "tags": {
+    "cables": "3",
+    "circuits": "1",
+    "frequency": "60",
+    "name": "Meldrim - Little Ogeechee 230kV",
+    "operator": "Georgia Power",
+    "operator:wikidata": "Q5547666",
+    "power": "line",
+    "voltage": "230000"
+  }
+},
+{
+  "type": "way",
+  "id": 1489153852,
+  "center": {
+    "lat": 32.0818972,
+    "lon": -81.3496478
+  },
+  "tags": {
+    "cables": "3",
+    "circuits": "1",
+    "frequency": "60",
+    "name": "Meldrim - Little Ogeechee 230kV",
+    "operator": "Georgia Power",
+    "operator:wikidata": "Q5547666",
+    "power": "line",
+    "voltage": "230000"
+  }
+},
+{
+  "type": "relation",
+  "id": 14317637,
+  "center": {
+    "lat": 33.4328703,
+    "lon": -81.9110807
+  },
+  "tags": {
+    "name": "Urquhart Substation",
+    "power": "substation",
+    "substation": "transmission",
+    "type": "multipolygon",
+    "voltage": "230000"
+  }
+},
+{
+  "type": "relation",
+  "id": 14339593,
+  "center": {
+    "lat": 33.5758347,
+    "lon": -80.7076499
+  },
+  "tags": {
+    "name": "Cameron Solar",
+    "operator": "Cameron Solar, LLC",
+    "plant:method": "photovoltaic",
+    "plant:output:electricity": "20 MW",
+    "plant:source": "solar",
+    "power": "plant",
+    "ref:US:EIA": "61489",
+    "start_date": "2017",
+    "type": "multipolygon"
+  }
+},
+{
+  "type": "relation",
+  "id": 17131066,
+  "center": {
+    "lat": 33.8213074,
+    "lon": -80.6284218
+  },
+  "tags": {
+    "addr:city": "Eastover",
+    "addr:housenumber": "142",
+    "addr:postcode": "29044",
+    "addr:state": "SC",
+    "addr:street": "Wateree Station Road",
+    "ele": "35",
+    "gnis:feature_id": "1249406",
+    "landuse": "industrial",
+    "name": "Wateree Station",
+    "operator": "Dominion Energy South Carolina, Inc",
+    "plant:method": "combustion",
+    "plant:output:electricity": "771.8 MW",
+    "plant:source": "coal",
+    "power": "plant",
+    "proposed:end_date": "2028",
+    "ref:US:EIA": "3297",
+    "start_date": "1970-09",
+    "type": "multipolygon",
+    "wikidata": "Q12010420"
+  }
+},
+{
+  "type": "relation",
+  "id": 20086234,
+  "center": {
+    "lat": 33.0168142,
+    "lon": -79.9285128
+  },
+  "tags": {
+    "landuse": "industrial",
+    "name": "Williams Station",
+    "operator": "South Carolina Generating Company",
+    "plant:method": "combustion",
+    "plant:output:electricity": "659.7 MW",
+    "plant:source": "coal",
+    "power": "plant",
+    "ref:US:EIA": "3298",
+    "source": "U.S. Energy Information Administration - EIA-860 - 2020",
+    "start_date": "1972-06",
+    "type": "multipolygon",
+    "wikidata": "Q12010709"
+  }
+}
+
+  ]
+}
