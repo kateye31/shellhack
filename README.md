@@ -10,7 +10,9 @@ It was built for the ShellHacks 2026 Sperry Tech **GridLock Challenge**, a hacka
 
 The web app is **React + GSAP**, built with Vite (`web/`). The data pipeline is Python (`pipeline/`).
 
-**Quickest way to view it:** double-click **`web/dist/index.html`**. It's a single self-contained file, so no server or install is needed.
+**Live demo:** https://kateye31.github.io/shellhack/
+
+**Quickest way to view it locally:** double-click **`web/dist/index.html`**. It's a single self-contained file, so no server or install is needed.
 (Don't open `web/index.html` directly. That's the development entry point and only works through Vite.)
 
 ```bash
