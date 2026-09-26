@@ -53,7 +53,7 @@ h1, h2, h3, h4 { margin: 0; line-height: 1.2; }
 .stat { flex: none; }
 .stat { background: var(--panel-2); border-radius: 8px; padding: 3px 9px; display: flex; flex-direction: column; }
 .stat b { font-size: 15px; font-variant-numeric: tabular-nums; }
-.stat span { font-size: 11px; color: var(--ink-3); }
+.stat > span { font-size: 11px; color: var(--ink-3); }
 .top-actions { display: flex; gap: 6px; flex: none; }
 .ghost { background: transparent; border: 1px solid var(--line); border-radius: 8px; padding: 6px 10px; }
 .ghost:hover { background: var(--panel-2); }
@@ -124,7 +124,7 @@ h1, h2, h3, h4 { margin: 0; line-height: 1.2; }
 .kpis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
 .kpi { background: var(--panel-2); border-radius: 8px; padding: 8px 10px; }
 .kpi b { display: block; font: 600 16px var(--mono); }
-.kpi span { font-size: 11px; color: var(--ink-3); }
+.kpi > span { font-size: 11px; color: var(--ink-3); }
 .pcard { border: 1px solid var(--line); border-left: 4px solid; border-radius: 8px; padding: 10px 12px; display: grid; gap: 4px; font-size: 12.5px; }
 .pcard h3 { font-size: 13.5px; }
 .pcard .sub { color: var(--ink-3); font-size: 11.5px; }
@@ -214,3 +214,45 @@ dialog header { display: flex; justify-content: space-between; align-items: cent
   .filters { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
   .legend { display: none; }
 }
+
+/* ---- reveal, explainability and impact (additions; reuse existing tokens) */
+.reveal-btn { background: var(--accent); color: #fff; border-color: var(--accent); font-weight: 600; }
+.reveal-btn:hover { background: var(--accent); filter: brightness(1.1); }
+.caption { position: absolute; z-index: 600; left: 50%; bottom: 26px; transform: translateX(-50%); width: min(620px, calc(100% - 300px)); background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: var(--radius); box-shadow: var(--shadow); padding: 12px 36px 12px 14px; font-size: 13.5px; color: var(--ink-2); animation: capin .35s ease; }
+.caption b:first-child { display: block; color: var(--accent); font-size: 11.5px; text-transform: uppercase; letter-spacing: .06em; margin-bottom: 3px; }
+.caption .cap-x { position: absolute; top: 8px; right: 8px; border: 0; background: none; color: var(--ink-3); font-size: 13px; }
+@keyframes capin { from { opacity: 0; transform: translate(-50%, 8px); } }
+.why p { margin: 0 0 10px; color: var(--ink-2); font-size: 13px; }
+.scorebar { display: flex; height: 12px; border-radius: 6px; overflow: hidden; background: var(--panel-2); }
+.scorebar span { height: 100%; }
+.scorekey { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 11.5px; color: var(--ink-2); margin: 6px 0 8px; }
+.scorekey i { display: inline-block; width: 9px; height: 9px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; }
+#impact { padding: 14px 16px 30px; display: grid; gap: 18px; }
+.funnel { display: grid; gap: 8px; }
+.fn { position: relative; min-height: 40px; display: flex; align-items: center; }
+.fn-bar { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 8px; background: color-mix(in srgb, var(--accent) 22%, transparent); }
+.fn-txt { position: relative; padding: 5px 10px; font-size: 12.5px; color: var(--ink-2); }
+.fn-txt b { font: 600 15px var(--mono); color: var(--ink); margin-right: 4px; }
+.fn-txt small { display: block; font-size: 11px; color: var(--ink-3); }
+.itable { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+.itable td { padding: 6px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+.itable td:last-child { text-align: right; font-family: var(--mono); white-space: nowrap; padding-left: 10px; }
+.itable td small { display: block; color: var(--ink-3); font-size: 11px; }
+.toplist { margin: 0; padding-left: 20px; display: grid; gap: 4px; font-size: 12.5px; }
+.toplist li { cursor: pointer; padding: 4px 6px; border-radius: 6px; }
+.toplist li:hover { background: var(--panel-2); }
+.toplist li span { display: block; color: var(--ink); }
+.toplist li b { font: 600 12px var(--mono); color: var(--good); }
+.pcard a { color: var(--accent); }
+@media (max-width: 900px) { .caption { width: calc(100% - 24px); bottom: 12px; } .reveal-btn { font-size: 12px; } }
+@media (max-width: 1600px) and (min-width: 901px) { .stats .stat:nth-child(4) { display: none; } }
+
+/* ---- React root + reveal controls */
+#root { flex: 1; display: flex; flex-direction: column; min-height: 0; }
+.caption { padding-bottom: 18px; }
+.cap-ctl { display: flex; align-items: center; gap: 6px; margin-top: 8px; }
+.cap-ctl button { border: 1px solid var(--line); background: var(--panel-2); border-radius: 6px; padding: 2px 9px; font-size: 12px; color: var(--ink-2); }
+.cap-ctl button:hover { border-color: var(--accent); color: var(--ink); }
+.cap-keys { margin-left: auto; font: 10.5px var(--mono); color: var(--ink-3); }
+.cap-progress { position: absolute; left: 0; right: 0; bottom: 0; height: 3px; background: var(--panel-2); border-radius: 0 0 var(--radius) var(--radius); overflow: hidden; }
+.cap-progress span { display: block; height: 100%; background: var(--accent); transform: scaleX(0); transform-origin: 0 50%; }

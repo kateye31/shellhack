@@ -46,6 +46,17 @@
     return Math.round(geo * (1 - w + w * timing) * conf * 10) / 10;
   }
 
+  // Break the score into additive parts so a judge can see exactly where the points came from.
+  function explain(o) {
+    const t = TIER[o.tier];
+    const geo = t.base - (t.base - t.next) * (o.distance_km - TIER_LO[o.tier]) / (t.max - TIER_LO[o.tier]);
+    const timing = o.construction_overlap_days > 0 ? 1 : Math.max(0, 1 - o.isd_gap_days / (365 * 4));
+    const conf = Math.min(CONF[o.a_conf], CONF[o.b_conf]);
+    const w = state.tw / 100;
+    const prox = geo * (1 - w), time = geo * w * timing;
+    return { geo, timing, conf, w, prox, time, penalty: (prox + time) * (1 - conf), total: (prox + time) * conf };
+  }
+
   function filtered() {
     let list = D.overlaps.filter(o =>
       o.distance_km <= state.km &&
@@ -297,18 +308,27 @@
 
     const total = items.filter(i => i.on).reduce((s, i) => s + i.v, 0);
     const potential = items.filter(i => !i.na).reduce((s, i) => s + i.v, 0);
-    return { items, total, potential, ca, cb, aligned };
+    // Planning-level uncertainty band: unit costs vary widely by site, so show a range, not a point.
+    return { items, total, potential, ca, cb, aligned, lo: total * RANGE[0], hi: total * RANGE[1], plo: potential * RANGE[0], phi: potential * RANGE[1] };
   }
+  const RANGE = [0.6, 1.5];
+  const moneyRange = (lo, hi) => lo === hi ? money(lo) : `${money(lo)}–${money(hi)}`;
 
   /* ------------------------------------------------------------------ detail */
   function epHtml(e) {
     return `<div>${e.lat != null ? "●" : "○"} ${esc(e.name)} <span class="conf ${e.method === "rejected" ? "rejected" : e.confidence}">${e.method === "rejected" ? "not located" : e.confidence}</span>
       <span class="sub">${esc(e.note || (e.lat == null ? "not found in public map data" : ""))}</span></div>`;
   }
+  const SOURCE_PDF = {
+    DESC: "../data/raw/Project%20Listings/Dominion%20Energy/2024-2028-2million-and-above-project-descriptions.pdf",
+    GA: "../data/raw/Project%20Listings/Georgia%20Power/2025%20IRP%20Volume%203%20PUBLIC%20DISCLOSURE.pdf",
+  };
+  const sourceLink = p => `<a href="${p.utility_code === "DESC" ? SOURCE_PDF.DESC : SOURCE_PDF.GA}#page=${p.source_page}" target="_blank" rel="noopener">source PDF p.${p.source_page} ↗</a>`;
+
   function pcard(p) {
     const w = p.window;
     return `<div class="pcard" style="border-left-color:${UTIL_COLOR(p.utility_code)}">
-      <div class="sub">${esc(UTIL_NAME(p))} · ${p.utility_code === "DESC" ? "SCRTP project " : "TEAMS #"}${esc(p.source_id)}${p.zone ? " · zone " + p.zone : ""} · PDF p.${p.source_page}</div>
+      <div class="sub">${esc(UTIL_NAME(p))} · ${p.utility_code === "DESC" ? "SCRTP project " : "TEAMS #"}${esc(p.source_id)}${p.zone ? " · zone " + p.zone : ""} · ${sourceLink(p)}</div>
       <h3>${esc(p.name)}</h3>
       <p>${esc(p.description || "—")}</p>
       <div class="sub">In service <b>${fmtDate(p.in_service)}</b> · ${esc(p.status)}${p.cost_usd ? ` · budget ${money(p.cost_usd)}` : " · cost redacted in public filing"}${p.line_miles ? ` · ${p.line_miles} mi` : ""}${p.voltage_kv ? ` · ${p.voltage_kv} kV` : ""}${w ? ` · window ${fmtDate(w.start)} → ${fmtDate(w.in_service)}` : ""}</div>
@@ -338,6 +358,82 @@
       <p class="note">Faint bar = planning window (start date → in service). Solid bar = final ${D.params.construction_months} months of field construction. Black tick = in-service date.</p>`;
   }
 
+  function whyHtml(o) {
+    const x = explain(o), t = TIER[o.tier];
+    const dist = o.distance_km < 0.1 ? "touch: they share a facility or cross" : `come within <b>${o.distance_km.toFixed(2)} km</b> of each other at their closest points`;
+    const time = o.construction_overlap_days > 0
+      ? `Their construction windows <b>overlap for about ${Math.round(o.construction_overlap_days / 30)} months</b>, so the same crews and equipment could serve both.`
+      : `Their construction windows do <b>not</b> overlap (in-service dates ${(o.isd_gap_days / 365).toFixed(1)} years apart), so timing adds ${x.time < 1 ? "nothing" : "only a little"} to the score.`;
+    const worst = [o.a_conf, o.b_conf].sort((p, q) => CONF[p] - CONF[q])[0];
+    const confTxt = x.conf < 1 ? ` Points were deducted because one location is only <b>${worst}</b>-confidence.` : " Both locations are high-confidence matches.";
+    const seg = (v, c, label) => v > 0.05 ? `<span style="width:${v}%;background:${c}" title="${label}: ${v.toFixed(1)} pts"></span>` : "";
+    return `<section class="block why"><h3>Why was this flagged?</h3>
+      <p>These projects ${dist}, which puts them in the ${t.label.toLowerCase()} band (the limit is 40 km). ${time}${confTxt}
+        At this distance the utilities could: <b>${t.why.toLowerCase()}</b>.</p>
+      <div class="scorebar">${seg(x.prox * x.conf, css("--desc"), "Proximity")}${seg(x.time * x.conf, css("--good"), "Timing")}${seg(x.penalty, css("--t-crew"), "Confidence deduction")}</div>
+      <div class="scorekey">
+        <span><i style="background:${css("--desc")}"></i>Proximity ${x.prox.toFixed(1)}</span>
+        <span><i style="background:${css("--good")}"></i>Timing ${x.time.toFixed(1)}</span>
+        <span><i style="background:${css("--t-crew")}"></i>Confidence −${x.penalty.toFixed(1)}</span>
+        <span>= <b>${x.total.toFixed(1)}</b> / 100</span>
+      </div>
+      <p class="note">Geography is the primary signal (${Math.round((1 - x.w) * 100)}% of the weight). Timing is secondary (${Math.round(x.w * 100)}%, adjustable with the Timeline weight slider).</p>
+    </section>`;
+  }
+
+  /* ------------------------------------------------------------------ impact tab */
+  function renderImpact(list) {
+    const nDesc = D.projects.filter(p => p.utility_code === "DESC" && p.geometry).length;
+    const nGa = D.projects.filter(p => p.state === "GA" && p.geometry && (state.partners || p.utility_code === "GPC")).length;
+    const checked = nDesc * nGa;
+    const all40 = D.overlaps.filter(o => state.partners || o.b_utility_code === "GPC").length;
+    const aligned = list.filter(o => o.construction_overlap_days > 0);
+    const close = list.filter(o => o.tier !== "crew");
+    const funnel = [
+      [checked, "project pairs checked", "every located DESC project × every located Georgia project"],
+      [all40, "within 40 km", `${(checked - all40).toLocaleString()} pairs filtered out as too far apart`],
+      [list.length, "pass current filters", "the distance, timing and confidence filters on the Opportunities tab"],
+      [close.length, "within 8 km", "close enough to share yards, land or outages"],
+      [aligned.length, "same build window", "construction windows overlap, so savings are available as scheduled"],
+    ];
+    // Sum savings without double-counting: greedily use each project in at most one pairing.
+    const est = list.map(o => ({ o, E: estimate(o) })).sort((p, q) => q.E.total - p.E.total || q.E.potential - p.E.potential);
+    const used = new Set(), picks = [];
+    for (const r of est) if (!used.has(r.o.a) && !used.has(r.o.b)) { used.add(r.o.a); used.add(r.o.b); picks.push(r); }
+    const sum = k => picks.reduce((s, r) => s + r.E[k], 0);
+    const areaOf = o => o.closest_a[1] > 32.8 ? "Augusta / Aiken" : "Savannah / Lowcountry";
+    const areas = {};
+    list.forEach(o => { const k = areaOf(o); areas[k] ||= { n: 0, aligned: 0 }; areas[k].n++; if (o.construction_overlap_days > 0) areas[k].aligned++; });
+    const res = [
+      ["Crews & equipment", list.length, "all pairs under 40 km"],
+      ["Laydown / staging yards", list.filter(o => TIER_ORDER.indexOf(o.tier) <= 2).length, "pairs under 8 km"],
+      ["Right-of-way & permits", list.filter(o => TIER_ORDER.indexOf(o.tier) <= 1).length, "pairs under 1.6 km"],
+      ["Outage / crossing coordination", list.filter(o => o.tier === "cross").length, "touching or crossing"],
+    ];
+    const max = funnel[0][0] || 1;
+    $("#impact").innerHTML = `
+      <section class="block"><h3>From ${checked.toLocaleString()} pairs to a short list</h3>
+        <div class="funnel">${funnel.map(([n, l, d], i) => `<div class="fn"><div class="fn-bar" style="width:${Math.max(2, Math.log10(n + 1) / Math.log10(max + 1) * 100)}%;opacity:${1 - i * .13}"></div>
+          <div class="fn-txt"><b>${n.toLocaleString()}</b> ${l}<small>${d}</small></div></div>`).join("")}</div>
+        <p class="note">Most pairs don't overlap, as the brief predicted. The engine discards anything 40 km or more apart before scoring. Bar widths use a log scale.</p></section>
+      <section class="block"><h3>Illustrative savings across the portfolio</h3>
+        <div class="kpis">
+          <div class="kpi"><b>${moneyRange(sum("lo"), sum("hi"))}</b><span>as scheduled today</span></div>
+          <div class="kpi"><b>${moneyRange(sum("plo"), sum("phi"))}</b><span>if build windows were aligned</span></div>
+          <div class="kpi"><b>${picks.length}</b><span>distinct pairings counted</span></div>
+        </div>
+        <p class="note">Each project is counted in at most one pairing, so savings aren't double-counted. These are planning-level ranges from the editable assumptions in the Detail view, not verified savings.</p></section>
+      <section class="block"><h3>Resources that could be shared</h3>
+        <table class="itable">${res.map(([k, n, d]) => `<tr><td>${k}<small>${d}</small></td><td>${n} pairs</td></tr>`).join("")}</table></section>
+      <section class="block"><h3>Where the opportunities are</h3>
+        <table class="itable">${Object.entries(areas).sort().map(([k, v]) => `<tr><td>${k}<small>${v.aligned} with overlapping build windows</small></td><td>${v.n} pairs</td></tr>`).join("")}</table></section>
+      <section class="block"><h3>Top pairings by estimated value</h3>
+        <ol class="toplist">${picks.slice(0, 6).map(r => `<li data-id="${r.o.id}"><span>${esc(P[r.o.a].name.split(":")[0])} ⟷ ${esc(P[r.o.b].name.replace(/^\w+:\s*/, ""))}</span>
+          <b>${r.E.aligned ? moneyRange(r.E.lo, r.E.hi) : moneyRange(r.E.plo, r.E.phi) + "*"}</b></li>`).join("")}</ol>
+        <p class="note">* potential only if the two schedules are aligned.</p></section>`;
+    $("#impact").querySelectorAll(".toplist li").forEach(li => li.onclick = () => select(li.dataset.id, true));
+  }
+
   function renderDetail() {
     const o = filtered().find(x => x.id === state.selected) || (() => { const r = D.overlaps.find(x => x.id === state.selected); return r && { ...r, s: score(r), r: "–" }; })();
     if (!o) { $("#detail").innerHTML = `<p class="empty">Select an opportunity.</p>`; return; }
@@ -360,15 +456,18 @@
       <div class="kpis">
         <div class="kpi"><b style="color:${css(t.color)}">${o.distance_km < 0.1 ? "0 km" : o.distance_km.toFixed(2) + " km"}</b><span>closest approach · ${t.label.toLowerCase()}</span></div>
         <div class="kpi"><b>${o.isd_gap_days.toLocaleString()} d</b><span>between in-service dates</span></div>
-        <div class="kpi"><b>${money(E.aligned ? E.total : E.potential)}</b><span>${E.aligned ? "est. savings" : "potential savings"}</span></div>
+        <div class="kpi"><b>${E.aligned ? moneyRange(E.lo, E.hi) : moneyRange(E.plo, E.phi)}</b><span>${E.aligned ? "est. savings as scheduled" : "potential savings if aligned"}</span></div>
       </div>
+      <button class="ghost" id="replay" style="justify-self:start">▶ Replay reveal for this pair</button>
+      ${whyHtml(o)}
       <section class="block"><h3>What the two utilities could share</h3><ul class="share">${shares}</ul></section>
-      <section class="block"><h3>Timeline</h3><p class="note" style="margin-bottom:8px;color:var(--ink-2)">${timingText}</p>${miniGantt(o)}</section>
+      <section class="block tl"><h3>Timeline</h3><p class="note" style="margin-bottom:8px;color:var(--ink-2)">${timingText}</p>${miniGantt(o)}</section>
       <section class="block cost"><h3>Rough cost / impact estimate</h3>
         <table>${E.items.map(i => `<tr class="${i.na ? "na" : ""}"><td>${i.k}<small>${esc(i.d)}${!i.na && !i.on ? " · only if schedules are aligned" : ""}</small></td><td>${i.na ? "—" : (i.on ? "" : "(") + money(i.v) + (i.on ? "" : ")")}</td></tr>`).join("")}
-          <tr class="total"><td>${E.aligned ? "Estimated savings as scheduled" : "Estimated savings as scheduled"}</td><td>${money(E.total)}</td></tr>
-          ${E.potential > E.total ? `<tr><td>Potential if build windows are aligned</td><td>${money(E.potential)}</td></tr>` : ""}
+          <tr class="total"><td>Estimated savings as scheduled<small>central estimate ${money(E.total)} · range ${RANGE[0]}× to ${RANGE[1]}×</small></td><td>${moneyRange(E.lo, E.hi)}</td></tr>
+          ${E.potential > E.total ? `<tr><td>Potential if build windows are aligned<small>central estimate ${money(E.potential)}</small></td><td>${moneyRange(E.plo, E.phi)}</td></tr>` : ""}
         </table>
+        <p class="note">These are illustrative planning-level figures, not verified savings. Actual savings depend on engineering feasibility, procurement, land rights, outage schedules and approval by both utilities.</p>
         <p class="note">Project costs: DESC ${money(E.ca.v)}${E.ca.est ? ` (est. ${esc(E.ca.basis)})` : " (filed budget)"} · Georgia ${money(E.cb.v)}${E.cb.est ? ` (est. ${esc(E.cb.basis)}; Georgia Power costs are redacted in the public IRP)` : ""}.
           Planning-level assumptions below. Edit them and the estimate updates.</p>
         <div class="assump">
@@ -383,6 +482,7 @@
       <section class="block"><h3>The two projects</h3><div style="display:grid;gap:8px">${pcard(a)}${pcard(b)}</div></section>`;
 
     $("#back").onclick = () => setTab("list");
+    $("#replay").onclick = () => reveal(o.id);
     $("#reset-a").onclick = () => { state.assumptions = { ...DEFAULTS }; saveAssump(); renderDetail(); };
     $("#detail").querySelectorAll("[data-a]").forEach(el => el.onchange = () => {
       const v = parseFloat(el.value); if (!isNaN(v)) { state.assumptions[el.dataset.a] = v; saveAssump(); renderDetail(); }
@@ -429,6 +529,59 @@
     });
   }
 
+  /* ------------------------------------------------------------------ coordination opportunity reveal */
+  let revealTimers = [];
+  function caption(html) {
+    const c = $("#caption");
+    if (!html) { c.hidden = true; return; }
+    c.hidden = false;
+    c.innerHTML = `${html}<button class="cap-x" aria-label="Stop">✕</button>`;
+    c.querySelector(".cap-x").onclick = stopReveal;
+  }
+  function stopReveal() { revealTimers.forEach(clearTimeout); revealTimers = []; caption(null); }
+  document.addEventListener("keydown", e => { if (e.key === "Escape" && revealTimers.length) stopReveal(); });
+
+  function reveal(id) {
+    stopReveal();
+    id ||= current[0]?.id;
+    const o = D.overlaps.find(x => x.id === id);
+    if (!o) return;
+    const a = P[o.a], b = P[o.b], E = estimate(o), t = TIER[o.tier];
+    const nDesc = D.projects.filter(p => p.utility_code === "DESC").length, nGpc = D.projects.filter(p => p.utility_code === "GPC").length;
+    const scrollTo = sel => $(sel)?.scrollIntoView({ behavior: "smooth", block: "start" });
+    const short = s => esc(s.replace(/^\w+:\s*/, "").split(":")[0]);
+    const steps = [
+      [0, () => {
+        state.selected = null; bufferLayer.clearLayers(); setTab("list"); drawOverlaps(current);
+        map.flyTo([33.0, -81.4], 7, { duration: 1.2 });
+        caption(`<b>1 / 5 · The problem</b> Dominion Energy SC (${nDesc} projects) and Georgia Power (${nGpc} projects) plan their work separately, right across the Savannah River from each other.`);
+      }],
+      [3800, () => {
+        const layers = [...(projShapes[o.a] || []), ...(projShapes[o.b] || [])];
+        if (layers.length) map.flyToBounds(L.featureGroup(layers).getBounds().pad(0.5), { duration: 1.6, maxZoom: 12 });
+        hoverPair(o.id, true);
+        caption(`<b>2 / 5 · Two projects</b> <span style="color:${css("--desc")}">■</span> ${short(a.name)} (DESC, in service ${fmtDate(a.in_service)}) and <span style="color:${UTIL_COLOR(b.utility_code)}">■</span> ${short(b.name)} (Georgia Power, in service ${fmtDate(b.in_service)}).`);
+      }],
+      [7800, () => {
+        select(o.id, false);
+        caption(`<b>3 / 5 · Closest points</b> The two projects come within <b>${o.distance_km < 0.1 ? "0 km (they touch)" : o.distance_km.toFixed(2) + " km"}</b>, measured between their closest points, not their centres. ${t.why}.`);
+      }],
+      [11800, () => {
+        scrollTo("#detail .tl");
+        caption(o.construction_overlap_days > 0
+          ? `<b>4 / 5 · Timing</b> Their construction windows overlap for about <b>${Math.round(o.construction_overlap_days / 30)} months</b>, so crews and equipment could move between the two jobs.`
+          : `<b>4 / 5 · Timing</b> They are scheduled <b>${(o.isd_gap_days / 365).toFixed(1)} years</b> apart. Coordinating would mean shifting one schedule.`);
+      }],
+      [15800, () => {
+        scrollTo("#detail .cost");
+        caption(`<b>5 / 5 · The value</b> Illustrative savings of <b>${E.aligned ? moneyRange(E.lo, E.hi) : moneyRange(E.plo, E.phi)}</b>${E.aligned ? " as scheduled" : " if the schedules were aligned"}, from ${E.items.filter(i => !i.na).map(i => i.k.toLowerCase()).join(", ")}. Every assumption is editable below.`);
+      }],
+      [24000, () => caption(null)],
+    ];
+    revealTimers = steps.map(([ms, fn]) => setTimeout(fn, ms));
+  }
+  $("#btn-reveal").onclick = () => reveal(current[0]?.id);
+
   /* ------------------------------------------------------------------ orchestration */
   let current = [];
   function renderMapOnly() {
@@ -439,6 +592,7 @@
     current = filtered();
     renderStats(current); renderList(current); renderMapOnly(); drawLegend();
     if (state.tab === "timeline") renderGantt(current);
+    if (state.tab === "impact") renderImpact(current);
     if (state.tab === "detail") renderDetail();
     persist();
   }
@@ -462,6 +616,7 @@
     document.querySelectorAll(".panel").forEach(p => p.classList.toggle("active", p.id === `panel-${t}`));
     $("#filters").classList.toggle("hidden", t === "detail");
     if (t === "timeline") renderGantt(current);
+    if (t === "impact") renderImpact(current);
     if (t === "detail") renderDetail();
     if (t !== "detail") drawBuffer(null);
   }
@@ -545,5 +700,6 @@
   if (first && D.overlaps.some(o => o.id === first)) select(first, !!h.sel);
   if (h.tab) setTab(h.tab);
   if (VIEWS[h.zoom]) map.fitBounds(VIEWS[h.zoom]);
+  if (h.reveal) setTimeout(() => reveal(h.reveal === "1" ? null : h.reveal), 600);
   window.addEventListener("hashchange", () => location.reload());
 })();

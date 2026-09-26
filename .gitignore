@@ -3,3 +3,4 @@ __pycache__/
 .venv/
 # Challenge-provided material not needed to run the tool
 data/raw/Opportunities/
+node_modules/
