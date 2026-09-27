@@ -59,8 +59,8 @@ def seg_intersect(a, b, c, d):
         return (q[0] - p[0]) * (r[1] - p[1]) - (q[1] - p[1]) * (r[0] - p[0])
     o1, o2, o3, o4 = orient(a, b, c), orient(a, b, d), orient(c, d, a), orient(c, d, b)
     if o1 * o2 < 0 and o3 * o4 < 0:
-        t = o3 / (o3 - o4)
-        return (c[0] + t * (d[0] - c[0]), c[1] + t * (d[1] - c[1]))  # point on ab
+        t = o3 / (o3 - o4)  # fraction along a→b
+        return (a[0] + t * (b[0] - a[0]), a[1] + t * (b[1] - a[1]))
     return None
 
 
