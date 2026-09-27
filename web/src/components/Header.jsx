@@ -26,7 +26,7 @@ export default function Header({ list, onReveal, onMethod, onExport, onTheme }) 
         {stats.map(([v, l]) => <div className="stat" key={l}><b>{v}</b><span>{l}</span></div>)}
       </div>
       <div className="top-actions">
-        <button className="ghost reveal-btn" onClick={onReveal} title="Walk through the top opportunity step by step">▶ Reveal top opportunity</button>
+        <button className="ghost reveal-btn" onClick={onReveal} title="Walk through the top opportunity step by step"><span className="rv-long">▶ Reveal top opportunity</span><span className="rv-short">▶ Reveal</span></button>
         <button className="ghost" onClick={onMethod}>Methodology</button>
         <button className="ghost" onClick={onExport}>Export CSV</button>
         <button className="ghost icon" onClick={onTheme} title="Toggle theme" aria-label="Toggle theme">◐</button>

@@ -44,12 +44,12 @@ h1, h2, h3, h4 { margin: 0; line-height: 1.2; }
 
 /* header */
 .top { display: flex; align-items: center; gap: 16px; padding: 8px 16px; background: var(--panel); border-bottom: 1px solid var(--line); flex-wrap: nowrap; }
-.brand { display: flex; align-items: center; gap: 10px; min-width: 0; }
+.brand { display: flex; align-items: center; gap: 10px; min-width: 150px; flex: 1 1 auto; }
 .logo { width: 30px; height: 30px; fill: var(--accent); flex: none; }
 .brand h1 { font-size: 18px; letter-spacing: -.01em; }
 .brand p { margin: 0; color: var(--ink-3); font-size: 12.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .brand > div { min-width: 0; }
-.stats { display: flex; gap: 6px; flex-wrap: nowrap; margin-left: auto; min-width: 0; overflow: hidden; }
+.stats { display: flex; gap: 6px; flex-wrap: nowrap; flex: none; }
 .stat { flex: none; }
 .stat { background: var(--panel-2); border-radius: 8px; padding: 3px 9px; display: flex; flex-direction: column; }
 .stat b { font-size: 15px; font-variant-numeric: tabular-nums; }
@@ -245,7 +245,11 @@ dialog header { display: flex; justify-content: space-between; align-items: cent
 .toplist li b { font: 600 12px var(--mono); color: var(--good); }
 .pcard a { color: var(--accent); }
 @media (max-width: 900px) { .caption { width: calc(100% - 24px); bottom: 12px; } .reveal-btn { font-size: 12px; } }
+/* Header: shed the least important pieces as the window narrows, never clip. */
+.rv-short { display: none; }
 @media (max-width: 1600px) and (min-width: 901px) { .stats .stat:nth-child(4) { display: none; } }
+@media (max-width: 1450px) and (min-width: 901px) { .rv-long { display: none; } .rv-short { display: inline; } }
+@media (max-width: 1250px) and (min-width: 901px) { .brand p { display: none; } .stats .stat:nth-child(1), .stats .stat:nth-child(2) { display: none; } }
 
 /* ---- React root + reveal controls */
 #root { flex: 1; display: flex; flex-direction: column; min-height: 0; }
